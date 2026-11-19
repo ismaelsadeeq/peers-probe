@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="216" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif">
+<rect width="760" height="216" fill="#0d1117"/>
+<text x="18" y="30" font-size="18" font-weight="600" fill="#e8eef5">Vulnerable nodes (&lt;v25) vs network: a different, hosted cohort</text>
+<text x="18" y="48" font-size="12.5" fill="#8b98a8">vulnerable cohort is faster and less residential -> set-and-forget hosted nodes</text>
+<line x1="338.8" y1="54" x2="338.8" y2="190" stroke="#222a35" stroke-width="1"/>
+<line x1="447.5" y1="54" x2="447.5" y2="190" stroke="#222a35" stroke-width="1"/>
+<line x1="556.2" y1="54" x2="556.2" y2="190" stroke="#222a35" stroke-width="1"/>
+<line x1="665.0" y1="54" x2="665.0" y2="190" stroke="#222a35" stroke-width="1"/>
+<text x="220" y="73" font-size="12.5" fill="#c9d4e0" text-anchor="end">pruned · vuln</text>
+<rect x="230" y="60" width="435" height="16" fill="#e53e3e" rx="3"/>
+<text x="672" y="73" font-size="11.5" fill="#8b98a8">35.3%</text>
+<text x="220" y="95" font-size="12.5" fill="#c9d4e0" text-anchor="end">pruned · all</text>
+<rect x="230" y="82" width="285" height="16" fill="#e53e3e" rx="3"/>
+<text x="522" y="95" font-size="11.5" fill="#8b98a8">23.2%</text>
+<text x="220" y="117" font-size="12.5" fill="#c9d4e0" text-anchor="end">residential · vuln</text>
+<rect x="230" y="104" width="172" height="16" fill="#e53e3e" rx="3"/>
+<text x="409" y="117" font-size="11.5" fill="#8b98a8">14.0%</text>
+<text x="220" y="139" font-size="12.5" fill="#c9d4e0" text-anchor="end">residential · all</text>
+<rect x="230" y="126" width="365" height="16" fill="#e53e3e" rx="3"/>
+<text x="602" y="139" font-size="11.5" fill="#8b98a8">29.7%</text>
+<text x="220" y="161" font-size="12.5" fill="#c9d4e0" text-anchor="end">device · vuln</text>
+<rect x="230" y="148" width="51" height="16" fill="#e53e3e" rx="3"/>
+<text x="288" y="161" font-size="11.5" fill="#8b98a8">4.2%</text>
+<text x="220" y="183" font-size="12.5" fill="#c9d4e0" text-anchor="end">device · all</text>
+<rect x="230" y="170" width="48" height="16" fill="#e53e3e" rx="3"/>
+<text x="285" y="183" font-size="11.5" fill="#8b98a8">3.9%</text>
+</svg>

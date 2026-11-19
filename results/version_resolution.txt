@@ -1,0 +1,17 @@
+reachable nodes with Satoshi version: 8527
+distinct exact versions observed: 82
+behavioral bands populated: 8
+versions uniquely detectable without UA: 2
+versions NOT detectable without UA: 80
+nodes with behavior-detectable exact version: 5 (0%)
+nodes UA-only for exact version: 8522 (99%)
+
+--- bands ---
+  v26+  (BIP324 v2 + all 0.21 msgs)          7000 nodes  [38 versions indistinguishable]
+  v0.21-25  (wtxidrelay/addrv2, no v2)       1371 nodes  [17 versions indistinguishable]
+  v0.19-0.20  (compact filters, no wtxidrelay)   77 nodes  [5 versions indistinguishable]
+  v0.16-0.18  (NETWORK_LIMITED)                53 nodes  [10 versions indistinguishable]
+  v0.13.1-0.15  (segwit)                       15 nodes  [8 versions indistinguishable]
+  v0.12  (sendheaders)                          6 nodes  [2 versions indistinguishable]
+  <v0.12                                        3 nodes  [DETECTABLE]
+  v0.13.0  (sendcmpct/feefilter)                2 nodes  [DETECTABLE]

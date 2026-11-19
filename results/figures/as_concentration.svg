@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="380" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif">
+<rect width="760" height="380" fill="#0d1117"/>
+<text x="18" y="30" font-size="18" font-weight="600" fill="#e8eef5">AS concentration: nodes vs serving capacity</text>
+<text x="18" y="48" font-size="12.5" fill="#8b98a8">capacity is more centralized than node count (top-1 AS ~10% nodes but ~31% bandwidth)</text>
+<line x1="66" y1="330.0" x2="738" y2="330.0" stroke="#222a35" stroke-width="1"/>
+<text x="58" y="334.0" font-size="10.5" fill="#8b98a8" text-anchor="end">0</text>
+<line x1="66" y1="267.0" x2="738" y2="267.0" stroke="#222a35" stroke-width="1"/>
+<text x="58" y="271.0" font-size="10.5" fill="#8b98a8" text-anchor="end">16</text>
+<line x1="66" y1="204.1" x2="738" y2="204.1" stroke="#222a35" stroke-width="1"/>
+<text x="58" y="208.1" font-size="10.5" fill="#8b98a8" text-anchor="end">33</text>
+<line x1="66" y1="141.1" x2="738" y2="141.1" stroke="#222a35" stroke-width="1"/>
+<text x="58" y="145.1" font-size="10.5" fill="#8b98a8" text-anchor="end">49</text>
+<line x1="66" y1="78.1" x2="738" y2="78.1" stroke="#222a35" stroke-width="1"/>
+<text x="58" y="82.1" font-size="10.5" fill="#8b98a8" text-anchor="end">66</text>
+<line x1="66" y1="58" x2="66" y2="330" stroke="#8b98a8" stroke-width="1"/>
+<line x1="66" y1="330" x2="738" y2="330" stroke="#8b98a8" stroke-width="1"/>
+<text x="66.0" y="347" font-size="10.5" fill="#8b98a8" text-anchor="middle">0</text>
+<text x="200.4" y="347" font-size="10.5" fill="#8b98a8" text-anchor="middle">10</text>
+<text x="334.8" y="347" font-size="10.5" fill="#8b98a8" text-anchor="middle">20</text>
+<text x="469.2" y="347" font-size="10.5" fill="#8b98a8" text-anchor="middle">30</text>
+<text x="603.6" y="347" font-size="10.5" fill="#8b98a8" text-anchor="middle">40</text>
+<text x="738.0" y="347" font-size="10.5" fill="#8b98a8" text-anchor="middle">50</text>
+<text x="402.0" y="372" font-size="12" fill="#c9d4e0" text-anchor="middle">top-k ASes</text>
+<text x="15" y="194.0" font-size="12" fill="#c9d4e0" text-anchor="middle" transform="rotate(-90 15 194.0)">cumulative %</text>
+<polyline points="66.0,330.0 79.4,291.5 92.9,266.0 106.3,246.5 119.8,229.5 133.2,217.8 146.6,208.5 160.1,200.3 173.5,193.1 187.0,187.1 200.4,182.3 213.8,178.2 227.3,174.6 240.7,171.1 254.2,167.6 267.6,164.1 281.0,160.9 294.5,158.2 307.9,155.5 321.4,153.1 334.8,150.7 348.2,148.4 361.7,146.1 375.1,143.9 388.6,141.8 402.0,139.6 415.4,137.6 428.9,135.6 442.3,133.7 455.8,131.9 469.2,130.1 482.6,128.4 496.1,126.7 509.5,125.0 523.0,123.4 536.4,121.8 549.8,120.2 563.3,118.6 576.7,117.1 590.2,115.5 603.6,114.1 617.0,112.8 630.5,111.5 643.9,110.2 657.4,108.9 670.8,107.8 684.2,106.6 697.7,105.5 711.1,104.4 724.6,103.4 738.0,102.3" fill="none" stroke="#58c4dd" stroke-width="2.5"/>
+<rect x="80" y="62" width="12" height="12" rx="2" fill="#58c4dd"/>
+<text x="96" y="72" font-size="11.5" fill="#c9d4e0">% of nodes</text>
+<polyline points="66.0,330.0 79.4,211.4 92.9,199.8 106.3,190.8 119.8,181.7 133.2,174.0 146.6,166.8 160.1,161.9 173.5,157.7 187.0,153.6 200.4,149.7 213.8,146.0 227.3,142.4 240.7,138.8 254.2,135.6 267.6,132.4 281.0,129.6 294.5,126.9 307.9,124.3 321.4,121.7 334.8,119.5 348.2,117.3 361.7,115.2 375.1,113.2 388.6,111.3 402.0,109.4 415.4,107.6 428.9,105.8 442.3,104.1 455.8,102.5 469.2,101.0 482.6,99.5 496.1,98.1 509.5,96.6 523.0,95.2 536.4,93.8 549.8,92.5 563.3,91.4 576.7,90.2 590.2,89.1 603.6,88.0 617.0,86.9 630.5,85.9 643.9,84.8 657.4,83.8 670.8,82.9 684.2,81.9 697.7,81.0 711.1,80.0 724.6,79.1 738.0,78.1" fill="none" stroke="#83c167" stroke-width="2.5"/>
+<rect x="230" y="62" width="12" height="12" rx="2" fill="#83c167"/>
+<text x="246" y="72" font-size="11.5" fill="#c9d4e0">% of bandwidth</text>
+</svg>

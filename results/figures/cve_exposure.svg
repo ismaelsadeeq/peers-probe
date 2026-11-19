@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="880" height="392" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif">
+<rect width="880" height="392" fill="#0d1117"/>
+<text x="18" y="30" font-size="18" font-weight="600" fill="#e8eef5">CVE exposure: observed share of the network below each fix line</text>
+<text x="18" y="48" font-size="12.5" fill="#8b98a8">nodes already patched by a backport release are excluded; severity red Critical, orange High, amber Med, grey Low</text>
+<line x1="436.2" y1="54" x2="436.2" y2="366" stroke="#222a35" stroke-width="1"/>
+<line x1="552.5" y1="54" x2="552.5" y2="366" stroke="#222a35" stroke-width="1"/>
+<line x1="668.8" y1="54" x2="668.8" y2="366" stroke="#222a35" stroke-width="1"/>
+<line x1="785.0" y1="54" x2="785.0" y2="366" stroke="#222a35" stroke-width="1"/>
+<text x="310" y="73" font-size="12.5" fill="#c9d4e0" text-anchor="end">CVE-2018-17144 (fix v0.16.3)</text>
+<rect x="320" y="60" width="2" height="16" fill="#fc6255" rx="3"/>
+<text x="329" y="73" font-size="11.5" fill="#8b98a8">0.3%</text>
+<text x="310" y="95" font-size="12.5" fill="#c9d4e0" text-anchor="end">CVE-2024-52912 (fix v0.21.0)</text>
+<rect x="320" y="82" width="10" height="16" fill="#f5d547" rx="3"/>
+<text x="337" y="95" font-size="11.5" fill="#8b98a8">1.8%</text>
+<text x="310" y="117" font-size="12.5" fill="#c9d4e0" text-anchor="end">CVE-2024-52919 (fix v29.0, practical)</text>
+<rect x="320" y="104" width="14" height="16" fill="#8b98a8" rx="3"/>
+<text x="341" y="117" font-size="11.5" fill="#8b98a8">2.5%</text>
+<text x="310" y="139" font-size="12.5" fill="#c9d4e0" text-anchor="end">CVE-2024-35202 (fix v25.0)</text>
+<rect x="320" y="126" width="28" height="16" fill="#f0ac5f" rx="3"/>
+<text x="355" y="139" font-size="11.5" fill="#8b98a8">5.1%</text>
+<text x="310" y="161" font-size="12.5" fill="#c9d4e0" text-anchor="end">CVE-2026-117350 (fix v32.1, non-Linux)</text>
+<rect x="320" y="148" width="36" height="16" fill="#f5d547" rx="3"/>
+<text x="363" y="161" font-size="11.5" fill="#8b98a8">6.4%</text>
+<text x="310" y="183" font-size="12.5" fill="#c9d4e0" text-anchor="end">CVE-2024-52911 (fix v29.0)</text>
+<rect x="320" y="170" width="212" height="16" fill="#fc6255" rx="3"/>
+<text x="539" y="183" font-size="11.5" fill="#8b98a8">37.4%</text>
+<text x="310" y="205" font-size="12.5" fill="#c9d4e0" text-anchor="end">CVE-2025-54604 (fix v30.0)</text>
+<rect x="320" y="192" width="225" height="16" fill="#f5d547" rx="3"/>
+<text x="552" y="205" font-size="11.5" fill="#8b98a8">39.7%</text>
+<text x="310" y="227" font-size="12.5" fill="#c9d4e0" text-anchor="end">CVE-2025-54605 (fix v30.0)</text>
+<rect x="320" y="214" width="225" height="16" fill="#f5d547" rx="3"/>
+<text x="552" y="227" font-size="11.5" fill="#8b98a8">39.7%</text>
+<text x="310" y="249" font-size="12.5" fill="#c9d4e0" text-anchor="end">CVE-2025-62861 (fix v30.0)</text>
+<rect x="320" y="236" width="228" height="16" fill="#f5d547" rx="3"/>
+<text x="555" y="249" font-size="11.5" fill="#8b98a8">40.3%</text>
+<text x="310" y="271" font-size="12.5" fill="#c9d4e0" text-anchor="end">CVE-2025-62860 (fix v30.0)</text>
+<rect x="320" y="258" width="228" height="16" fill="#f0ac5f" rx="3"/>
+<text x="555" y="271" font-size="11.5" fill="#8b98a8">40.3%</text>
+<text x="310" y="293" font-size="12.5" fill="#c9d4e0" text-anchor="end">CVE-2025-62859 (fix v30.0)</text>
+<rect x="320" y="280" width="230" height="16" fill="#f5d547" rx="3"/>
+<text x="557" y="293" font-size="11.5" fill="#8b98a8">40.6%</text>
+<text x="310" y="315" font-size="12.5" fill="#c9d4e0" text-anchor="end">CVE-2025-46598 (fix v30.0)</text>
+<rect x="320" y="302" width="303" height="16" fill="#f5d547" rx="3"/>
+<text x="630" y="315" font-size="11.5" fill="#8b98a8">53.4%</text>
+<text x="310" y="337" font-size="12.5" fill="#c9d4e0" text-anchor="end">CVE-2026-117349 (fix v32.1)</text>
+<rect x="320" y="324" width="464" height="16" fill="#f5d547" rx="3"/>
+<text x="791" y="337" font-size="11.5" fill="#8b98a8">81.9%</text>
+<text x="310" y="359" font-size="12.5" fill="#c9d4e0" text-anchor="end">CVE-2026-117346 (fix v32.1)</text>
+<rect x="320" y="346" width="464" height="16" fill="#8b98a8" rx="3"/>
+<text x="791" y="359" font-size="11.5" fill="#8b98a8">81.9%</text>
+</svg>

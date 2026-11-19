@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="120" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif">
+<rect width="820" height="120" fill="#0d1117"/>
+<text x="18" y="30" font-size="18" font-weight="600" fill="#e8eef5">Oceania: 162 nodes (1.9%)</text>
+<text x="18" y="48" font-size="12.5" fill="#8b98a8">2 countries</text>
+<text x="267" y="74" font-size="12" fill="#c9d4e0" text-anchor="end">🇦🇺 AU</text>
+<rect x="275" y="62" width="318" height="14" fill="#5cd0b3" rx="3"/>
+<text x="599" y="74" font-size="11" fill="#8b98a8">141</text>
+<text x="267" y="94" font-size="12" fill="#c9d4e0" text-anchor="end">🇳🇿 NZ</text>
+<rect x="275" y="82" width="47" height="14" fill="#5cd0b3" rx="3"/>
+<text x="328" y="94" font-size="11" fill="#8b98a8">21</text>
+</svg>

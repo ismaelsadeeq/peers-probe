@@ -1,0 +1,200 @@
+{
+  "n_nodes": 8535,
+  "n_served": 3992,
+  "lat_slow_ms": 325.6,
+  "signal_prevalence": {
+    "pruned": 1981,
+    "residential": 2538,
+    "appliance": 490,
+    "knots": 883,
+    "device": 334,
+    "slow_latency": 2136
+  },
+  "bw_gradient": {
+    "0": {
+      "n": 3954,
+      "served": 1792,
+      "median_mbps": 30.7,
+      "serve_rate": 45.3
+    },
+    "1": {
+      "n": 3034,
+      "served": 1521,
+      "median_mbps": 11.4,
+      "serve_rate": 50.1
+    },
+    "2": {
+      "n": 1303,
+      "served": 599,
+      "median_mbps": 7.3,
+      "serve_rate": 46.0
+    },
+    "3": {
+      "n": 235,
+      "served": 76,
+      "median_mbps": 7.4,
+      "serve_rate": 32.3
+    },
+    "4": {
+      "n": 9,
+      "served": 4,
+      "median_mbps": 6.6,
+      "serve_rate": 44.4
+    }
+  },
+  "naive_gradient": {
+    "0": {
+      "n": 2912,
+      "served": 1225,
+      "median_mbps": 29.4,
+      "serve_rate": 42.1
+    },
+    "1": {
+      "n": 3452,
+      "served": 1738,
+      "median_mbps": 15.9,
+      "serve_rate": 50.3
+    },
+    "2": {
+      "n": 1650,
+      "served": 841,
+      "median_mbps": 8.9,
+      "serve_rate": 51.0
+    },
+    "3": {
+      "n": 476,
+      "served": 175,
+      "median_mbps": 6.7,
+      "serve_rate": 36.8
+    },
+    "4": {
+      "n": 43,
+      "served": 12,
+      "median_mbps": 4.4,
+      "serve_rate": 27.9
+    },
+    "5": {
+      "n": 2,
+      "served": 1,
+      "median_mbps": 6.8,
+      "serve_rate": 50.0
+    }
+  },
+  "spread_bw": 4.65,
+  "spread_naive": 6.68,
+  "bw_rule_ge_1": {
+    "pool": 4581,
+    "precision": 40.8,
+    "recall": 89.4
+  },
+  "bw_rule_ge_2": {
+    "pool": 1547,
+    "precision": 64.2,
+    "recall": 43.5
+  },
+  "slow_p25_mbps": 8.7,
+  "disk_vs_bw": {
+    "pruned": [
+      170.3,
+      17.1
+    ],
+    "residential": [
+      265.0,
+      11.0
+    ],
+    "all": [
+      207.1,
+      14.4
+    ]
+  },
+  "cascade": {
+    "bw_0_all": {
+      "pool": 8535,
+      "probe_cost": 3992,
+      "precision": 25.1,
+      "recall": 100.0
+    },
+    "bw_1_res": {
+      "pool": 2538,
+      "probe_cost": 1385,
+      "precision": 34.5,
+      "recall": 47.7
+    },
+    "bw_2_res_lat": {
+      "pool": 728,
+      "probe_cost": 377,
+      "precision": 87.0,
+      "recall": 32.7
+    },
+    "disk_pruned": {
+      "pool": 1981,
+      "probe_cost": 0,
+      "precision": 22.3,
+      "recall": 23.0
+    }
+  },
+  "vulnerable": {
+    "n": 430,
+    "pct": 5.0,
+    "median_mbps": 27.9,
+    "soft_targets": 168,
+    "by_version": [
+      [
+        22,
+        91
+      ],
+      [
+        24,
+        85
+      ],
+      [
+        20,
+        68
+      ],
+      [
+        21,
+        54
+      ],
+      [
+        23,
+        44
+      ],
+      [
+        18,
+        29
+      ],
+      [
+        17,
+        15
+      ],
+      [
+        16,
+        9
+      ],
+      [
+        19,
+        9
+      ],
+      [
+        15,
+        7
+      ],
+      [
+        12,
+        6
+      ],
+      [
+        13,
+        5
+      ],
+      [
+        14,
+        5
+      ],
+      [
+        11,
+        3
+      ]
+    ]
+  }
+}

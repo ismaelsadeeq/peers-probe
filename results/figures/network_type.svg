@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="238" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif">
+<rect width="760" height="238" fill="#0d1117"/>
+<text x="18" y="30" font-size="18" font-weight="600" fill="#e8eef5">Network type (PeeringDB, 97% coverage)</text>
+<text x="18" y="48" font-size="12.5" fill="#8b98a8">ASN = network vantage, not identity (tunnel/VPN/Tor)</text>
+<line x1="338.8" y1="54" x2="338.8" y2="212" stroke="#222a35" stroke-width="1"/>
+<line x1="447.5" y1="54" x2="447.5" y2="212" stroke="#222a35" stroke-width="1"/>
+<line x1="556.2" y1="54" x2="556.2" y2="212" stroke="#222a35" stroke-width="1"/>
+<line x1="665.0" y1="54" x2="665.0" y2="212" stroke="#222a35" stroke-width="1"/>
+<text x="220" y="73" font-size="12.5" fill="#c9d4e0" text-anchor="end">Hosting</text>
+<rect x="230" y="60" width="435" height="16" fill="#38a169" rx="3"/>
+<text x="672" y="73" font-size="11.5" fill="#8b98a8">2,558</text>
+<text x="220" y="95" font-size="12.5" fill="#c9d4e0" text-anchor="end">Residential</text>
+<rect x="230" y="82" width="429" height="16" fill="#38a169" rx="3"/>
+<text x="666" y="95" font-size="11.5" fill="#8b98a8">2,523</text>
+<text x="220" y="117" font-size="12.5" fill="#c9d4e0" text-anchor="end">Transit</text>
+<rect x="230" y="104" width="287" height="16" fill="#38a169" rx="3"/>
+<text x="524" y="117" font-size="11.5" fill="#8b98a8">1,693</text>
+<text x="220" y="139" font-size="12.5" fill="#c9d4e0" text-anchor="end">Other</text>
+<rect x="230" y="126" width="166" height="16" fill="#38a169" rx="3"/>
+<text x="403" y="139" font-size="11.5" fill="#8b98a8">979</text>
+<text x="220" y="161" font-size="12.5" fill="#c9d4e0" text-anchor="end">Enterprise</text>
+<rect x="230" y="148" width="91" height="16" fill="#38a169" rx="3"/>
+<text x="328" y="161" font-size="11.5" fill="#8b98a8">539</text>
+<text x="220" y="183" font-size="12.5" fill="#c9d4e0" text-anchor="end">Unmapped</text>
+<rect x="230" y="170" width="37" height="16" fill="#38a169" rx="3"/>
+<text x="274" y="183" font-size="11.5" fill="#8b98a8">223</text>
+<text x="220" y="205" font-size="12.5" fill="#c9d4e0" text-anchor="end">Education</text>
+<rect x="230" y="192" width="3" height="16" fill="#38a169" rx="3"/>
+<text x="240" y="205" font-size="11.5" fill="#8b98a8">20</text>
+</svg>

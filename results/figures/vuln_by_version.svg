@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="392" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif">
+<rect width="760" height="392" fill="#0d1117"/>
+<text x="18" y="30" font-size="18" font-weight="600" fill="#e8eef5">Vulnerable nodes by Bitcoin Core release era (&lt;v25)</text>
+<text x="18" y="48" font-size="12.5" fill="#8b98a8">old set-and-forget nodes; user agent is the high-value signal here</text>
+<line x1="338.8" y1="54" x2="338.8" y2="366" stroke="#222a35" stroke-width="1"/>
+<line x1="447.5" y1="54" x2="447.5" y2="366" stroke="#222a35" stroke-width="1"/>
+<line x1="556.2" y1="54" x2="556.2" y2="366" stroke="#222a35" stroke-width="1"/>
+<line x1="665.0" y1="54" x2="665.0" y2="366" stroke="#222a35" stroke-width="1"/>
+<text x="220" y="73" font-size="12.5" fill="#c9d4e0" text-anchor="end">v24</text>
+<rect x="230" y="60" width="406" height="16" fill="#805ad5" rx="3"/>
+<text x="643" y="73" font-size="11.5" fill="#8b98a8">85 nodes</text>
+<text x="220" y="95" font-size="12.5" fill="#c9d4e0" text-anchor="end">v23</text>
+<rect x="230" y="82" width="210" height="16" fill="#805ad5" rx="3"/>
+<text x="447" y="95" font-size="11.5" fill="#8b98a8">44 nodes</text>
+<text x="220" y="117" font-size="12.5" fill="#c9d4e0" text-anchor="end">v22</text>
+<rect x="230" y="104" width="435" height="16" fill="#805ad5" rx="3"/>
+<text x="672" y="117" font-size="11.5" fill="#8b98a8">91 nodes</text>
+<text x="220" y="139" font-size="12.5" fill="#c9d4e0" text-anchor="end">v21</text>
+<rect x="230" y="126" width="258" height="16" fill="#805ad5" rx="3"/>
+<text x="495" y="139" font-size="11.5" fill="#8b98a8">54 nodes</text>
+<text x="220" y="161" font-size="12.5" fill="#c9d4e0" text-anchor="end">v20</text>
+<rect x="230" y="148" width="325" height="16" fill="#805ad5" rx="3"/>
+<text x="562" y="161" font-size="11.5" fill="#8b98a8">68 nodes</text>
+<text x="220" y="183" font-size="12.5" fill="#c9d4e0" text-anchor="end">v19</text>
+<rect x="230" y="170" width="43" height="16" fill="#805ad5" rx="3"/>
+<text x="280" y="183" font-size="11.5" fill="#8b98a8">9 nodes</text>
+<text x="220" y="205" font-size="12.5" fill="#c9d4e0" text-anchor="end">v18</text>
+<rect x="230" y="192" width="138" height="16" fill="#805ad5" rx="3"/>
+<text x="375" y="205" font-size="11.5" fill="#8b98a8">29 nodes</text>
+<text x="220" y="227" font-size="12.5" fill="#c9d4e0" text-anchor="end">v17</text>
+<rect x="230" y="214" width="71" height="16" fill="#805ad5" rx="3"/>
+<text x="308" y="227" font-size="11.5" fill="#8b98a8">15 nodes</text>
+<text x="220" y="249" font-size="12.5" fill="#c9d4e0" text-anchor="end">v16</text>
+<rect x="230" y="236" width="43" height="16" fill="#805ad5" rx="3"/>
+<text x="280" y="249" font-size="11.5" fill="#8b98a8">9 nodes</text>
+<text x="220" y="271" font-size="12.5" fill="#c9d4e0" text-anchor="end">v15</text>
+<rect x="230" y="258" width="33" height="16" fill="#805ad5" rx="3"/>
+<text x="270" y="271" font-size="11.5" fill="#8b98a8">7 nodes</text>
+<text x="220" y="293" font-size="12.5" fill="#c9d4e0" text-anchor="end">v14</text>
+<rect x="230" y="280" width="23" height="16" fill="#805ad5" rx="3"/>
+<text x="260" y="293" font-size="11.5" fill="#8b98a8">5 nodes</text>
+<text x="220" y="315" font-size="12.5" fill="#c9d4e0" text-anchor="end">v13</text>
+<rect x="230" y="302" width="23" height="16" fill="#805ad5" rx="3"/>
+<text x="260" y="315" font-size="11.5" fill="#8b98a8">5 nodes</text>
+<text x="220" y="337" font-size="12.5" fill="#c9d4e0" text-anchor="end">v12</text>
+<rect x="230" y="324" width="28" height="16" fill="#805ad5" rx="3"/>
+<text x="265" y="337" font-size="11.5" fill="#8b98a8">6 nodes</text>
+<text x="220" y="359" font-size="12.5" fill="#c9d4e0" text-anchor="end">v11</text>
+<rect x="230" y="346" width="14" height="16" fill="#805ad5" rx="3"/>
+<text x="251" y="359" font-size="11.5" fill="#8b98a8">3 nodes</text>
+</svg>

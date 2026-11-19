@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="260" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif">
+<rect width="760" height="260" fill="#0d1117"/>
+<text x="18" y="30" font-size="18" font-weight="600" fill="#e8eef5">Onion vs clearnet: direct probe comparison</text>
+<text x="18" y="48" font-size="12.5" fill="#8b98a8">onion nodes are less pruned, less vulnerable, more current (direct probe, not Bitnodes)</text>
+<line x1="338.8" y1="54" x2="338.8" y2="234" stroke="#222a35" stroke-width="1"/>
+<line x1="447.5" y1="54" x2="447.5" y2="234" stroke="#222a35" stroke-width="1"/>
+<line x1="556.2" y1="54" x2="556.2" y2="234" stroke="#222a35" stroke-width="1"/>
+<line x1="665.0" y1="54" x2="665.0" y2="234" stroke="#222a35" stroke-width="1"/>
+<text x="220" y="73" font-size="12.5" fill="#c9d4e0" text-anchor="end">pruned · clearnet</text>
+<rect x="230" y="60" width="106" height="16" fill="#a371f7" rx="3"/>
+<text x="343" y="73" font-size="11.5" fill="#8b98a8">23.2%</text>
+<text x="220" y="95" font-size="12.5" fill="#c9d4e0" text-anchor="end">pruned · onion</text>
+<rect x="230" y="82" width="32" height="16" fill="#a371f7" rx="3"/>
+<text x="269" y="95" font-size="11.5" fill="#8b98a8">7.1%</text>
+<text x="220" y="117" font-size="12.5" fill="#c9d4e0" text-anchor="end">vuln&lt;v25 · clearnet</text>
+<rect x="230" y="104" width="22" height="16" fill="#a371f7" rx="3"/>
+<text x="259" y="117" font-size="11.5" fill="#8b98a8">5.0%</text>
+<text x="220" y="139" font-size="12.5" fill="#c9d4e0" text-anchor="end">vuln&lt;v25 · onion</text>
+<rect x="230" y="126" width="2" height="16" fill="#a371f7" rx="3"/>
+<text x="239" y="139" font-size="11.5" fill="#8b98a8">0.4%</text>
+<text x="220" y="161" font-size="12.5" fill="#c9d4e0" text-anchor="end">P2P_V2 · clearnet</text>
+<rect x="230" y="148" width="365" height="16" fill="#a371f7" rx="3"/>
+<text x="602" y="161" font-size="11.5" fill="#8b98a8">79.6%</text>
+<text x="220" y="183" font-size="12.5" fill="#c9d4e0" text-anchor="end">P2P_V2 · onion</text>
+<rect x="230" y="170" width="435" height="16" fill="#a371f7" rx="3"/>
+<text x="672" y="183" font-size="11.5" fill="#8b98a8">94.7%</text>
+<text x="220" y="205" font-size="12.5" fill="#c9d4e0" text-anchor="end">Knots · clearnet</text>
+<rect x="230" y="192" width="47" height="16" fill="#a371f7" rx="3"/>
+<text x="284" y="205" font-size="11.5" fill="#8b98a8">10.3%</text>
+<text x="220" y="227" font-size="12.5" fill="#c9d4e0" text-anchor="end">Knots · onion</text>
+<rect x="230" y="214" width="53" height="16" fill="#a371f7" rx="3"/>
+<text x="290" y="227" font-size="11.5" fill="#8b98a8">11.7%</text>
+</svg>

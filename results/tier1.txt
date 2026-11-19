@@ -1,0 +1,64 @@
+
+================================================================
+ 1. ECLIPSE-RESISTANCE AUDIT (addrman + asmap)
+================================================================
+addrman: 64597 new, 2222 tried
+distinct /16 groups: 13931   distinct ASNs: 4007   ASN-0/unmapped: 7 (0%)
+top ASNs by /16 span (asmap collapses each to ONE netgroup vs many under /16):
+  AS7018     spans 489 distinct /16 groups  -> /16 bucketing gives attacker 489 groups, asmap gives 1
+  AS16509    spans 425 distinct /16 groups  -> /16 bucketing gives attacker 425 groups, asmap gives 1
+  AS3320     spans 365 distinct /16 groups  -> /16 bucketing gives attacker 365 groups, asmap gives 1
+  AS4134     spans 243 distinct /16 groups  -> /16 bucketing gives attacker 243 groups, asmap gives 1
+  AS701      spans 220 distinct /16 groups  -> /16 bucketing gives attacker 220 groups, asmap gives 1
+
+single-entity flood surface (share of NEW table by ASN):
+  AS14593     2858  ( 4.4% of new table)  ISP
+  AS3320      2297  ( 3.6% of new table)  NSP
+  AS7018      1658  ( 2.6% of new table)  NSP
+  AS8881      1410  ( 2.2% of new table)  ISP
+  AS212238    1122  ( 1.7% of new table)  ?
+
+================================================================
+ 2. AS / PREFIX PARTITION SURFACE (capacity-weighted)  [ASN=vantage, not identity]
+================================================================
+top-k AS    % nodes  % bandwidth  % bw(capped p90)
+1              8.5%        44.4%             21.3%
+3             18.5%        53.6%             28.1%
+5             26.1%        56.9%             33.3%
+10            35.4%        62.2%             39.2%
+20            43.9%        67.5%             47.7%
+
+/24 prefix concentration: top-10 = 1.4% nodes, 16.9% bandwidth (of 2651 prefixes)
+
+================================================================
+ 3. LINKINGLION-STYLE SURVEILLANCE DETECTOR
+================================================================
+inbound peers: 130
+peers matching surveillance signature (relay-set + no-data + low-recv): 24
+  159.195.111.12:19441     AS197540  /GlobalNodeMap:2.1/    relay,no-data-given
+  104.187.222.50:45958     AS7018    /bitnodes.io:0.3/      relay,no-data-given
+  129.13.189.200:58066     AS34878   /dsn.kastel.kit.edu/bi relay,no-data-given
+  147.229.8.240:40238      AS197451  /bitcoinj:0.16.2/Bitco relay,no-data-given
+  147.229.8.240:36298      AS197451  /bitcoinj:0.16.2/Bitco relay,no-data-given
+  141.52.36.57:49942       AS34878   /dsn.tm.kit.edu/bitcoi relay,no-data-given
+  129.13.189.202:49830     AS34878   /dsn.tm.kit.edu/bitcoi relay,no-data-given
+  86.127.229.145:55609     AS57269   /alt-bitnodes:0.1/     relay,no-data-given
+  116.255.44.133:60175     AS24129   /Satoshi:31.1.0/       relay,no-data-given
+  43.165.5.63:37850        AS132203  /p2aburn:1.0/          relay,no-data-given
+  149.50.216.244:17637     AS212238  /NBitcoin:7.0.24/      relay,no-data-given
+  64.34.94.219:45028       AS396356  /Satoshi:28.0.0/       relay,no-data-given
+
+inbound /24 ranges with multiple connections (sybil clustering):
+  192.42.116.0/24 : 3 inbound
+  129.13.189.0/24 : 2 inbound
+  147.229.8.0/24 : 2 inbound
+  185.220.101.0/24 : 2 inbound
+  86.202.167.0/24 : 2 inbound
+  149.50.216.0/24 : 2 inbound
+
+census-side: ASNs with most distinct user agents (multi-UA/spoof signature):
+  AS24940    43 distinct UAs
+  AS16276    31 distinct UAs
+  AS14061    26 distinct UAs
+  AS51167    23 distinct UAs
+  AS16509    22 distinct UAs

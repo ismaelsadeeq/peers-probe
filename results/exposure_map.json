@@ -1,0 +1,211 @@
+{
+  "CVE-2018-17144": {
+    "fixed_in": "0.16.3",
+    "fixed_below_vmajor": 16,
+    "type": "inflation / assert DoS (Critical)",
+    "trigger": "block",
+    "backported": {},
+    "condition": "",
+    "behavior_flaggable": "YES",
+    "fix_pr": "PR #14247 (0.16.3)",
+    "exposed_nodes": 29,
+    "exposed_pct": 0.3,
+    "upper_bound_pct": 0.3
+  },
+  "CVE-2024-52912": {
+    "fixed_in": "0.21.0",
+    "fixed_below_vmajor": 21,
+    "type": "timestamp-overflow net-split (Med)",
+    "trigger": "p2p msg",
+    "backported": {},
+    "condition": "",
+    "behavior_flaggable": "YES",
+    "fix_pr": "fixed 0.21.0",
+    "exposed_nodes": 156,
+    "exposed_pct": 1.8,
+    "upper_bound_pct": 1.8
+  },
+  "CVE-2024-35202": {
+    "fixed_in": "25.0",
+    "fixed_below_vmajor": 25,
+    "type": "blocktxn assert crash (High)",
+    "trigger": "p2p msg",
+    "backported": {},
+    "condition": "",
+    "behavior_flaggable": "PARTIAL",
+    "fix_pr": "PR #26898 (v25.0)",
+    "exposed_nodes": 430,
+    "exposed_pct": 5.1,
+    "upper_bound_pct": 5.1
+  },
+  "CVE-2024-52911": {
+    "fixed_in": "29.0",
+    "fixed_below_vmajor": 29,
+    "type": "script interpreter crash (Critical)",
+    "trigger": "crafted block",
+    "backported": {},
+    "condition": "",
+    "behavior_flaggable": "NO",
+    "fix_pr": "fixed v29.0",
+    "exposed_nodes": 3170,
+    "exposed_pct": 37.4,
+    "upper_bound_pct": 37.4
+  },
+  "CVE-2024-52919": {
+    "fixed_in": "29.0",
+    "fixed_below_vmajor": 29,
+    "type": "addrman 32-bit id overflow (Low)",
+    "trigger": "p2p msg",
+    "backported": {},
+    "condition": "ratelimit22",
+    "behavior_flaggable": "NO",
+    "fix_pr": "PR #30568 (v29.0); rate-limited since v22",
+    "exposed_nodes": 210,
+    "exposed_pct": 2.5,
+    "upper_bound_pct": 37.4
+  },
+  "CVE-2025-46598": {
+    "fixed_in": "30.0",
+    "fixed_below_vmajor": 30,
+    "type": "CPU DoS via unconfirmed txs (Med)",
+    "trigger": "p2p msg",
+    "backported": {},
+    "condition": "",
+    "behavior_flaggable": "NO",
+    "fix_pr": "fixed v30.0",
+    "exposed_nodes": 4526,
+    "exposed_pct": 53.4,
+    "upper_bound_pct": 53.4
+  },
+  "CVE-2025-54604": {
+    "fixed_in": "30.0",
+    "fixed_below_vmajor": 30,
+    "type": "disk fill via spoofed self-conn (Med)",
+    "trigger": "p2p msg",
+    "backported": {
+      "29": "29.1.0"
+    },
+    "condition": "",
+    "behavior_flaggable": "NO",
+    "fix_pr": "fixed v30.0; backported 29.1",
+    "exposed_nodes": 3362,
+    "exposed_pct": 39.7,
+    "upper_bound_pct": 53.4
+  },
+  "CVE-2025-54605": {
+    "fixed_in": "30.0",
+    "fixed_below_vmajor": 30,
+    "type": "disk fill via invalid blocks (Med)",
+    "trigger": "block",
+    "backported": {
+      "29": "29.1.0"
+    },
+    "condition": "",
+    "behavior_flaggable": "NO",
+    "fix_pr": "fixed v30.0; backported 29.1",
+    "exposed_nodes": 3362,
+    "exposed_pct": 39.7,
+    "upper_bound_pct": 53.4
+  },
+  "CVE-2025-62861": {
+    "fixed_in": "30.0",
+    "fixed_below_vmajor": 30,
+    "type": "TRUC eviction corrupts mempool (Med)",
+    "trigger": "reorg",
+    "backported": {
+      "28": "28.3.0",
+      "29": "29.2.0"
+    },
+    "condition": "",
+    "behavior_flaggable": "NO",
+    "fix_pr": "fixed v30.0; backported 28.3/29.2",
+    "exposed_nodes": 3410,
+    "exposed_pct": 40.3,
+    "upper_bound_pct": 53.4
+  },
+  "CVE-2025-62860": {
+    "fixed_in": "30.0",
+    "fixed_below_vmajor": 30,
+    "type": "Tor whitelist bypass (High)",
+    "trigger": "p2p msg",
+    "backported": {
+      "28": "28.3.0",
+      "29": "29.2.0"
+    },
+    "condition": "",
+    "behavior_flaggable": "NO",
+    "fix_pr": "fixed v30.0; backported 28.3/29.2",
+    "exposed_nodes": 3410,
+    "exposed_pct": 40.3,
+    "upper_bound_pct": 53.4
+  },
+  "CVE-2025-62859": {
+    "fixed_in": "30.0",
+    "fixed_below_vmajor": 30,
+    "type": "compact block witness stall (Med)",
+    "trigger": "p2p msg",
+    "backported": {
+      "29": "29.2.0"
+    },
+    "condition": "",
+    "behavior_flaggable": "NO",
+    "fix_pr": "fixed v30.0; backported 29.2",
+    "exposed_nodes": 3438,
+    "exposed_pct": 40.6,
+    "upper_bound_pct": 53.4
+  },
+  "CVE-2026-117349": {
+    "fixed_in": "32.1",
+    "fixed_below_vmajor": 32,
+    "type": "OOM via paused peer queues (Med)",
+    "trigger": "p2p msg",
+    "backported": {
+      "29": "29.5.0",
+      "30": "30.4.0",
+      "31": "31.2.0"
+    },
+    "condition": "",
+    "behavior_flaggable": "NO",
+    "fix_pr": "fixed v32.1; backported 29.5/30.4/31.2",
+    "exposed_nodes": 6937,
+    "exposed_pct": 81.9,
+    "upper_bound_pct": 86.1
+  },
+  "CVE-2026-117350": {
+    "fixed_in": "32.1",
+    "fixed_below_vmajor": 32,
+    "type": "OOM via TCP urgent data (Med)",
+    "trigger": "p2p msg",
+    "backported": {
+      "29": "29.5.0",
+      "30": "30.4.0",
+      "31": "31.2.0"
+    },
+    "condition": "nonlinux",
+    "behavior_flaggable": "NO",
+    "fix_pr": "fixed v32.1; backported 29.5/30.4/31.2; non-Linux only",
+    "exposed_nodes": 543,
+    "exposed_pct": 6.4,
+    "upper_bound_pct": 86.1
+  },
+  "CVE-2026-117346": {
+    "fixed_in": "32.1",
+    "fixed_below_vmajor": 32,
+    "type": "undo file overflow crash (Low)",
+    "trigger": "miner reorg",
+    "backported": {
+      "29": "29.5.0",
+      "30": "30.4.0",
+      "31": "31.2.0"
+    },
+    "condition": "",
+    "behavior_flaggable": "NO",
+    "fix_pr": "fixed v32.1; backported 29.5/30.4/31.2",
+    "exposed_nodes": 6937,
+    "exposed_pct": 81.9,
+    "upper_bound_pct": 86.1
+  },
+  "_meta": {
+    "versioned_nodes": 8470
+  }
+}

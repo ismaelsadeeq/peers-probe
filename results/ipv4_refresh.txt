@@ -1,0 +1,26 @@
+FRESH IPv4 CENSUS  (direct probe of the Bitnodes current reachable set)
+=======================================================================
+targets: 5,552 current IPv4 nodes (Bitnodes snapshot) | reachable: 5,428 (97%) | 184 distinct UAs
+
+Signals (directly measured by our harness):
+  pruned (disk-limited)   22.9%
+  Knots                    6.2%
+  appliance UA             7.4%
+  vulnerable (<v25)        5.2%
+  connect RTT p50          207 ms      ping RTT p50 132 ms      getheaders p50 377 ms
+
+CVE exposure (share of versioned nodes below the fix line):
+  CVE-2018-17144  <v16    0.2%
+  CVE-2024-52912  <v21    1.6%
+  CVE-2024-35202  <v25    5.2%
+  CVE-2024-52919  <v29   31.5%
+
+Cross-checks:
+  - Matches the Bitnodes snapshot's IPv4 figures (22.7% pruned, 6.3% Knots, 7.3% appliance,
+    5.3% vuln) to within <0.3 pts -- independent validation of both our probe and theirs.
+  - Disk vs bandwidth axis reproduces on fresh data: pruned nodes connect FASTER
+    (p50 134 ms) than non-pruned (212 ms), confirming pruned = cheap-VPS disk-limited,
+    not slow home boxes. Same orthogonality found in the original addrman census.
+
+NOTE: this is the publicly-reachable (listening) IPv4 set only. Nodes behind NAT that do
+not accept inbound connections are the network majority and are invisible to any crawler.

@@ -1,0 +1,68 @@
+P2P LATENCY REFERENCE PROFILES  (n=8535, connect_ms coverage 8535)
+==============================================================================
+overall connect RTT: p50=207ms  p90=473ms
+
+By OS class (nmap)
+   bucket                     n  connect p50  connect p90  headers p50  Mbps p50
+   macOS                     29      277.0ms      536.0ms      825.0ms       9.0
+   Other/Device             194      256.0ms      546.0ms      678.0ms      11.0
+   Windows                  266      244.0ms      466.0ms      660.0ms      10.0
+   Unknown                 2454      216.0ms      497.0ms      571.0ms      12.0
+   Linux                   5452      168.0ms      455.0ms      350.0ms      21.0
+   Android                   20      158.0ms      448.0ms      563.0ms      14.0
+   Solaris                    1      141.0ms      141.0ms       Nonems      None
+   BSD                      119      139.0ms      471.0ms      389.0ms      15.0
+
+By implementation
+   bucket                     n  connect p50  connect p90  headers p50  Mbps p50
+   Knots                    883      272.0ms      488.0ms      710.0ms      11.0
+   Other                     65      254.0ms      414.0ms      678.0ms      10.0
+   Core                    7587      157.0ms      474.0ms      368.0ms      15.0
+
+By AS class (PeeringDB)
+   bucket                     n  connect p50  connect p90  headers p50  Mbps p50
+   Cable/DSL/ISP           2538      265.0ms      507.0ms      684.0ms      11.0
+   Not Disclosed            977      260.0ms      540.0ms      606.0ms      11.0
+   NSP                     1676      229.0ms      467.0ms      607.0ms      12.0
+   Network Services          55      172.0ms      441.0ms      829.0ms      10.0
+   Route Collector            1      131.0ms      131.0ms      454.0ms       5.0
+   Enterprise               542      122.0ms      529.0ms      368.0ms      21.0
+   Unmapped                 208      113.0ms      526.0ms      325.0ms      24.0
+   Educational/Research      20      101.0ms      576.0ms      286.0ms      27.0
+   Non-Profit                10       92.0ms      644.0ms      406.0ms      26.0
+   Content                 2508       83.0ms      369.0ms      236.0ms      35.0
+
+By release era
+   bucket                     n  connect p50  connect p90  headers p50  Mbps p50
+   v32                     1174      140.0ms      515.0ms      385.0ms      14.0
+   v31                     2199      148.0ms      488.0ms      397.0ms      14.0
+   v30                      574      123.0ms      442.0ms      310.0ms      22.0
+   v29                     1351      251.0ms      482.0ms      657.0ms      13.0
+   v28                     1006      237.0ms      408.0ms      642.0ms      12.0
+   v27                      489      105.0ms      409.0ms      263.0ms      22.0
+   v26                      150       88.0ms      363.0ms      255.0ms      24.0
+   v25                     1097      240.0ms      538.0ms      594.0ms      12.0
+   v24                       85       87.0ms      342.0ms      224.0ms      31.0
+   v23                       44       84.0ms      253.0ms      199.0ms      39.0
+   v22                       91      234.0ms      372.0ms      602.0ms      11.0
+   v21                       54      121.0ms      319.0ms      235.0ms      22.0
+   v20                       68       53.0ms      333.0ms      125.0ms      60.0
+   v19                        9       70.0ms      329.0ms      205.0ms      37.0
+   v18                       29      202.0ms      385.0ms      273.0ms      30.0
+   v17                       15      153.0ms      506.0ms      510.0ms      15.0
+   v16                        9       67.0ms      312.0ms      148.0ms      55.0
+   v15                        7       71.0ms      334.0ms      219.0ms      36.0
+   v14                        5       81.0ms      350.0ms      718.0ms      20.0
+   v13                        5       72.0ms      209.0ms      204.0ms      27.0
+   v12                        6      268.0ms      366.0ms      530.0ms      None
+   v11                        3      317.0ms      325.0ms      837.0ms      None
+
+By low-resource signal (on vs off)
+   signal          on n   on p50  off n  off p50
+   pruned          1981  170.0ms   6554  212.0ms
+   residential     2538  265.0ms   5997  130.0ms
+   appliance        490  292.0ms   8045  154.0ms
+   knots            883  272.0ms   7652  159.0ms
+   device           334  225.0ms   8201  205.0ms
+   slow_latency    2136  425.0ms   6399   96.0ms
+   [fig] latency_by_asclass.svg

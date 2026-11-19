@@ -1,0 +1,128 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="360" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif">
+<rect width="820" height="360" fill="#0d1117"/>
+<text x="18" y="30" font-size="18" font-weight="600" fill="#e8eef5">Europe: 3882 nodes (45.5%)</text>
+<text x="18" y="48" font-size="12.5" fill="#8b98a8">41 countries</text>
+<text x="91" y="74" font-size="12" fill="#c9d4e0" text-anchor="end">🇩🇪 DE</text>
+<rect x="99" y="62" width="99" height="14" fill="#58c4dd" rx="3"/>
+<text x="204" y="74" font-size="11" fill="#8b98a8">1,614</text>
+<text x="91" y="94" font-size="12" fill="#c9d4e0" text-anchor="end">🇫🇷 FR</text>
+<rect x="99" y="82" width="42" height="14" fill="#58c4dd" rx="3"/>
+<text x="147" y="94" font-size="11" fill="#8b98a8">686</text>
+<text x="91" y="114" font-size="12" fill="#c9d4e0" text-anchor="end">🇬🇧 GB</text>
+<rect x="99" y="102" width="13" height="14" fill="#58c4dd" rx="3"/>
+<text x="118" y="114" font-size="11" fill="#8b98a8">224</text>
+<text x="91" y="134" font-size="12" fill="#c9d4e0" text-anchor="end">🇳🇱 NL</text>
+<rect x="99" y="122" width="13" height="14" fill="#58c4dd" rx="3"/>
+<text x="118" y="134" font-size="11" fill="#8b98a8">217</text>
+<text x="91" y="154" font-size="12" fill="#c9d4e0" text-anchor="end">🇨🇭 CH</text>
+<rect x="99" y="142" width="10" height="14" fill="#58c4dd" rx="3"/>
+<text x="115" y="154" font-size="11" fill="#8b98a8">175</text>
+<text x="91" y="174" font-size="12" fill="#c9d4e0" text-anchor="end">🇪🇸 ES</text>
+<rect x="99" y="162" width="6" height="14" fill="#58c4dd" rx="3"/>
+<text x="111" y="174" font-size="11" fill="#8b98a8">105</text>
+<text x="91" y="194" font-size="12" fill="#c9d4e0" text-anchor="end">🇨🇿 CZ</text>
+<rect x="99" y="182" width="5" height="14" fill="#58c4dd" rx="3"/>
+<text x="110" y="194" font-size="11" fill="#8b98a8">84</text>
+<text x="91" y="214" font-size="12" fill="#c9d4e0" text-anchor="end">🇸🇪 SE</text>
+<rect x="99" y="202" width="4" height="14" fill="#58c4dd" rx="3"/>
+<text x="109" y="214" font-size="11" fill="#8b98a8">68</text>
+<text x="91" y="234" font-size="12" fill="#c9d4e0" text-anchor="end">🇦🇹 AT</text>
+<rect x="99" y="222" width="3" height="14" fill="#58c4dd" rx="3"/>
+<text x="108" y="234" font-size="11" fill="#8b98a8">64</text>
+<text x="91" y="254" font-size="12" fill="#c9d4e0" text-anchor="end">🇵🇱 PL</text>
+<rect x="99" y="242" width="3" height="14" fill="#58c4dd" rx="3"/>
+<text x="108" y="254" font-size="11" fill="#8b98a8">59</text>
+<text x="91" y="274" font-size="12" fill="#c9d4e0" text-anchor="end">🇷🇴 RO</text>
+<rect x="99" y="262" width="3" height="14" fill="#58c4dd" rx="3"/>
+<text x="108" y="274" font-size="11" fill="#8b98a8">59</text>
+<text x="91" y="294" font-size="12" fill="#c9d4e0" text-anchor="end">🇮🇹 IT</text>
+<rect x="99" y="282" width="3" height="14" fill="#58c4dd" rx="3"/>
+<text x="108" y="294" font-size="11" fill="#8b98a8">57</text>
+<text x="91" y="314" font-size="12" fill="#c9d4e0" text-anchor="end">🇨🇾 CY</text>
+<rect x="99" y="302" width="2" height="14" fill="#58c4dd" rx="3"/>
+<text x="107" y="314" font-size="11" fill="#8b98a8">44</text>
+<text x="91" y="334" font-size="12" fill="#c9d4e0" text-anchor="end">🇱🇹 LT</text>
+<rect x="99" y="322" width="2" height="14" fill="#58c4dd" rx="3"/>
+<text x="107" y="334" font-size="11" fill="#8b98a8">43</text>
+<text x="365" y="74" font-size="12" fill="#c9d4e0" text-anchor="end">🇧🇬 BG</text>
+<rect x="373" y="62" width="2" height="14" fill="#58c4dd" rx="3"/>
+<text x="381" y="74" font-size="11" fill="#8b98a8">38</text>
+<text x="365" y="94" font-size="12" fill="#c9d4e0" text-anchor="end">🇺🇦 UA</text>
+<rect x="373" y="82" width="2" height="14" fill="#58c4dd" rx="3"/>
+<text x="381" y="94" font-size="11" fill="#8b98a8">36</text>
+<text x="365" y="114" font-size="12" fill="#c9d4e0" text-anchor="end">🇳🇴 NO</text>
+<rect x="373" y="102" width="2" height="14" fill="#58c4dd" rx="3"/>
+<text x="381" y="114" font-size="11" fill="#8b98a8">28</text>
+<text x="365" y="134" font-size="12" fill="#c9d4e0" text-anchor="end">🇭🇺 HU</text>
+<rect x="373" y="122" width="2" height="14" fill="#58c4dd" rx="3"/>
+<text x="381" y="134" font-size="11" fill="#8b98a8">26</text>
+<text x="365" y="154" font-size="12" fill="#c9d4e0" text-anchor="end">🇵🇹 PT</text>
+<rect x="373" y="142" width="2" height="14" fill="#58c4dd" rx="3"/>
+<text x="381" y="154" font-size="11" fill="#8b98a8">24</text>
+<text x="365" y="174" font-size="12" fill="#c9d4e0" text-anchor="end">🇧🇪 BE</text>
+<rect x="373" y="162" width="2" height="14" fill="#58c4dd" rx="3"/>
+<text x="381" y="174" font-size="11" fill="#8b98a8">24</text>
+<text x="365" y="194" font-size="12" fill="#c9d4e0" text-anchor="end">🇫🇮 FI</text>
+<rect x="373" y="182" width="2" height="14" fill="#58c4dd" rx="3"/>
+<text x="381" y="194" font-size="11" fill="#8b98a8">24</text>
+<text x="365" y="214" font-size="12" fill="#c9d4e0" text-anchor="end">🇩🇰 DK</text>
+<rect x="373" y="202" width="2" height="14" fill="#58c4dd" rx="3"/>
+<text x="381" y="214" font-size="11" fill="#8b98a8">24</text>
+<text x="365" y="234" font-size="12" fill="#c9d4e0" text-anchor="end">🇸🇮 SI</text>
+<rect x="373" y="222" width="2" height="14" fill="#58c4dd" rx="3"/>
+<text x="381" y="234" font-size="11" fill="#8b98a8">21</text>
+<text x="365" y="254" font-size="12" fill="#c9d4e0" text-anchor="end">🇸🇰 SK</text>
+<rect x="373" y="242" width="2" height="14" fill="#58c4dd" rx="3"/>
+<text x="381" y="254" font-size="11" fill="#8b98a8">16</text>
+<text x="365" y="274" font-size="12" fill="#c9d4e0" text-anchor="end">🇱🇻 LV</text>
+<rect x="373" y="262" width="2" height="14" fill="#58c4dd" rx="3"/>
+<text x="381" y="274" font-size="11" fill="#8b98a8">16</text>
+<text x="365" y="294" font-size="12" fill="#c9d4e0" text-anchor="end">🇮🇸 IS</text>
+<rect x="373" y="282" width="2" height="14" fill="#58c4dd" rx="3"/>
+<text x="381" y="294" font-size="11" fill="#8b98a8">16</text>
+<text x="365" y="314" font-size="12" fill="#c9d4e0" text-anchor="end">🇪🇪 EE</text>
+<rect x="373" y="302" width="2" height="14" fill="#58c4dd" rx="3"/>
+<text x="381" y="314" font-size="11" fill="#8b98a8">16</text>
+<text x="365" y="334" font-size="12" fill="#c9d4e0" text-anchor="end">🇮🇪 IE</text>
+<rect x="373" y="322" width="2" height="14" fill="#58c4dd" rx="3"/>
+<text x="381" y="334" font-size="11" fill="#8b98a8">12</text>
+<text x="639" y="74" font-size="12" fill="#c9d4e0" text-anchor="end">🇲🇩 MD</text>
+<rect x="647" y="62" width="2" height="14" fill="#58c4dd" rx="3"/>
+<text x="655" y="74" font-size="11" fill="#8b98a8">10</text>
+<text x="639" y="94" font-size="12" fill="#c9d4e0" text-anchor="end">🇬🇷 GR</text>
+<rect x="647" y="82" width="2" height="14" fill="#58c4dd" rx="3"/>
+<text x="655" y="94" font-size="11" fill="#8b98a8">9</text>
+<text x="639" y="114" font-size="12" fill="#c9d4e0" text-anchor="end">🇪🇺 EU</text>
+<rect x="647" y="102" width="2" height="14" fill="#58c4dd" rx="3"/>
+<text x="655" y="114" font-size="11" fill="#8b98a8">8</text>
+<text x="639" y="134" font-size="12" fill="#c9d4e0" text-anchor="end">🇭🇷 HR</text>
+<rect x="647" y="122" width="2" height="14" fill="#58c4dd" rx="3"/>
+<text x="655" y="134" font-size="11" fill="#8b98a8">6</text>
+<text x="639" y="154" font-size="12" fill="#c9d4e0" text-anchor="end">🇷🇸 RS</text>
+<rect x="647" y="142" width="2" height="14" fill="#58c4dd" rx="3"/>
+<text x="655" y="154" font-size="11" fill="#8b98a8">6</text>
+<text x="639" y="174" font-size="12" fill="#c9d4e0" text-anchor="end">🇱🇺 LU</text>
+<rect x="647" y="162" width="2" height="14" fill="#58c4dd" rx="3"/>
+<text x="655" y="174" font-size="11" fill="#8b98a8">6</text>
+<text x="639" y="194" font-size="12" fill="#c9d4e0" text-anchor="end">🇧🇾 BY</text>
+<rect x="647" y="182" width="2" height="14" fill="#58c4dd" rx="3"/>
+<text x="655" y="194" font-size="11" fill="#8b98a8">5</text>
+<text x="639" y="214" font-size="12" fill="#c9d4e0" text-anchor="end">🇲🇹 MT</text>
+<rect x="647" y="202" width="2" height="14" fill="#58c4dd" rx="3"/>
+<text x="655" y="214" font-size="11" fill="#8b98a8">4</text>
+<text x="639" y="234" font-size="12" fill="#c9d4e0" text-anchor="end">🇦🇩 AD</text>
+<rect x="647" y="222" width="2" height="14" fill="#58c4dd" rx="3"/>
+<text x="655" y="234" font-size="11" fill="#8b98a8">3</text>
+<text x="639" y="254" font-size="12" fill="#c9d4e0" text-anchor="end">🇱🇮 LI</text>
+<rect x="647" y="242" width="2" height="14" fill="#58c4dd" rx="3"/>
+<text x="655" y="254" font-size="11" fill="#8b98a8">2</text>
+<text x="639" y="274" font-size="12" fill="#c9d4e0" text-anchor="end">🇬🇬 GG</text>
+<rect x="647" y="262" width="2" height="14" fill="#58c4dd" rx="3"/>
+<text x="655" y="274" font-size="11" fill="#8b98a8">1</text>
+<text x="639" y="294" font-size="12" fill="#c9d4e0" text-anchor="end">🇫🇴 FO</text>
+<rect x="647" y="282" width="2" height="14" fill="#58c4dd" rx="3"/>
+<text x="655" y="294" font-size="11" fill="#8b98a8">1</text>
+<text x="639" y="314" font-size="12" fill="#c9d4e0" text-anchor="end">🇷🇪 RE</text>
+<rect x="647" y="302" width="2" height="14" fill="#58c4dd" rx="3"/>
+<text x="655" y="314" font-size="11" fill="#8b98a8">1</text>
+</svg>

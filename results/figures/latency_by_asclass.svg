@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="294" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif">
+<rect width="760" height="294" fill="#0d1117"/>
+<text x="18" y="30" font-size="18" font-weight="600" fill="#e8eef5">Median TCP connect latency by AS class</text>
+<line x1="338.8" y1="44" x2="338.8" y2="268" stroke="#222a35" stroke-width="1"/>
+<line x1="447.5" y1="44" x2="447.5" y2="268" stroke="#222a35" stroke-width="1"/>
+<line x1="556.2" y1="44" x2="556.2" y2="268" stroke="#222a35" stroke-width="1"/>
+<line x1="665.0" y1="44" x2="665.0" y2="268" stroke="#222a35" stroke-width="1"/>
+<text x="220" y="63" font-size="12.5" fill="#c9d4e0" text-anchor="end">Content (n=2508)</text>
+<rect x="230" y="50" width="136" height="16" fill="#2b6cb0" rx="3"/>
+<text x="373" y="63" font-size="11.5" fill="#8b98a8">83.0 ms</text>
+<text x="220" y="85" font-size="12.5" fill="#c9d4e0" text-anchor="end">Non-Profit (n=10)</text>
+<rect x="230" y="72" width="151" height="16" fill="#2b6cb0" rx="3"/>
+<text x="388" y="85" font-size="11.5" fill="#8b98a8">92.0 ms</text>
+<text x="220" y="107" font-size="12.5" fill="#c9d4e0" text-anchor="end">Educational/Research (n=20)</text>
+<rect x="230" y="94" width="165" height="16" fill="#2b6cb0" rx="3"/>
+<text x="402" y="107" font-size="11.5" fill="#8b98a8">101.0 ms</text>
+<text x="220" y="129" font-size="12.5" fill="#c9d4e0" text-anchor="end">Unmapped (n=208)</text>
+<rect x="230" y="116" width="185" height="16" fill="#2b6cb0" rx="3"/>
+<text x="422" y="129" font-size="11.5" fill="#8b98a8">113.0 ms</text>
+<text x="220" y="151" font-size="12.5" fill="#c9d4e0" text-anchor="end">Enterprise (n=542)</text>
+<rect x="230" y="138" width="200" height="16" fill="#2b6cb0" rx="3"/>
+<text x="437" y="151" font-size="11.5" fill="#8b98a8">122.0 ms</text>
+<text x="220" y="173" font-size="12.5" fill="#c9d4e0" text-anchor="end">Route Collector (n=1)</text>
+<rect x="230" y="160" width="215" height="16" fill="#2b6cb0" rx="3"/>
+<text x="452" y="173" font-size="11.5" fill="#8b98a8">131.0 ms</text>
+<text x="220" y="195" font-size="12.5" fill="#c9d4e0" text-anchor="end">Network Services (n=55)</text>
+<rect x="230" y="182" width="282" height="16" fill="#2b6cb0" rx="3"/>
+<text x="519" y="195" font-size="11.5" fill="#8b98a8">172.0 ms</text>
+<text x="220" y="217" font-size="12.5" fill="#c9d4e0" text-anchor="end">NSP (n=1676)</text>
+<rect x="230" y="204" width="375" height="16" fill="#2b6cb0" rx="3"/>
+<text x="612" y="217" font-size="11.5" fill="#8b98a8">229.0 ms</text>
+<text x="220" y="239" font-size="12.5" fill="#c9d4e0" text-anchor="end">Not Disclosed (n=977)</text>
+<rect x="230" y="226" width="426" height="16" fill="#2b6cb0" rx="3"/>
+<text x="663" y="239" font-size="11.5" fill="#8b98a8">260.0 ms</text>
+<text x="220" y="261" font-size="12.5" fill="#c9d4e0" text-anchor="end">Cable/DSL/ISP (n=2538)</text>
+<rect x="230" y="248" width="435" height="16" fill="#2b6cb0" rx="3"/>
+<text x="672" y="261" font-size="11.5" fill="#8b98a8">265.0 ms</text>
+</svg>

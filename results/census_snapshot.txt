@@ -1,0 +1,47 @@
+CROSS-NETWORK CENSUS  (Bitnodes snapshot ts=1793276439, 18183 reachable nodes)
+==========================================================================
+NOTE: publicly-reachable (listening) nodes only. Nodes behind NAT that do not
+      accept inbound connections are the network majority and are invisible to
+      every crawler, including this one.
+reachable by network: onion 7339 (40.4%), ipv4 5552 (30.5%), i2p 4658 (25.6%), ipv6 634 (3.5%)
+
+--- ipv4  (n=5552) ---
+  pruned (disk-limited): 22.7%   Knots:  6.3%   appliance:  7.3%
+  vulnerable (<v25):      5.3%   (n with parseable version: 5505)
+  top versions: v31(2433), v28(840), v29(746), v30(481), v27(300), v25(162)
+  top ASNs: 
+  top countries: 
+
+--- ipv6  (n=634) ---
+  pruned (disk-limited): 31.5%   Knots:  4.1%   appliance:  1.4%
+  vulnerable (<v25):      7.2%   (n with parseable version: 625)
+  top versions: v31(301), v28(67), v29(61), v30(48), v32(37), v27(33)
+  top ASNs: 
+  top countries: 
+
+--- onion  (n=7339) ---
+  pruned (disk-limited):  7.3%   Knots: 11.0%   appliance:  0.2%
+  vulnerable (<v25):      0.3%   (n with parseable version: 7337)
+  top versions: v31(4213), v29(2186), v30(262), v28(224), v32(193), v27(106)
+
+--- i2p  (n=4658) ---
+  pruned (disk-limited):  6.6%   Knots: 15.4%   appliance:  0.0%
+  vulnerable (<v25):      0.1%   (n with parseable version: 4658)
+  top versions: v31(2936), v29(1228), v30(239), v28(97), v26(72), v32(45)
+
+--- CVE exposure (share of versioned nodes below the fix line), by network ---
+  advisory        fixed<      ipv4    ipv6   onion     i2p
+  CVE-2018-17144  v16         0.2%    0.6%    0.0%    0.0%
+  CVE-2024-52912  v21         1.7%    2.9%    0.0%    0.0%
+  CVE-2024-35202  v25         5.3%    7.2%    0.3%    0.1%
+  CVE-2024-52911  v29        31.1%   28.5%    6.6%    4.5%
+  CVE-2024-52919  v29        31.1%   28.5%    6.6%    4.5%
+  CVE-2025-46598  v30        44.7%   38.2%   36.4%   30.9%
+  CVE-2025-54604  v30        44.7%   38.2%   36.4%   30.9%
+  CVE-2025-54605  v30        44.7%   38.2%   36.4%   30.9%
+  CVE-2025-62861  v30        44.7%   38.2%   36.4%   30.9%
+  CVE-2025-62860  v30        44.7%   38.2%   36.4%   30.9%
+  CVE-2025-62859  v30        44.7%   38.2%   36.4%   30.9%
+  CVE-2026-117349 v32        97.6%   94.1%   97.4%   99.0%
+  CVE-2026-117350 v32        97.6%   94.1%   97.4%   99.0%
+  CVE-2026-117346 v32        97.6%   94.1%   97.4%   99.0%

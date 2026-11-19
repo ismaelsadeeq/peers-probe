@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="194" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif">
+<rect width="760" height="194" fill="#0d1117"/>
+<text x="18" y="30" font-size="18" font-weight="600" fill="#e8eef5">Bandwidth sub-score vs measured throughput (pruned excluded)</text>
+<text x="18" y="48" font-size="12.5" fill="#8b98a8">residential+appliance+Knots+embedded+slow-RTT; no bandwidth probe</text>
+<line x1="338.8" y1="54" x2="338.8" y2="168" stroke="#222a35" stroke-width="1"/>
+<line x1="447.5" y1="54" x2="447.5" y2="168" stroke="#222a35" stroke-width="1"/>
+<line x1="556.2" y1="54" x2="556.2" y2="168" stroke="#222a35" stroke-width="1"/>
+<line x1="665.0" y1="54" x2="665.0" y2="168" stroke="#222a35" stroke-width="1"/>
+<text x="220" y="73" font-size="12.5" fill="#c9d4e0" text-anchor="end">bw-score 0 (n=3954)</text>
+<rect x="230" y="60" width="435" height="16" fill="#2b6cb0" rx="3"/>
+<text x="672" y="73" font-size="11.5" fill="#8b98a8">30.7 Mbps  45% serve</text>
+<text x="220" y="95" font-size="12.5" fill="#c9d4e0" text-anchor="end">bw-score 1 (n=3034)</text>
+<rect x="230" y="82" width="161" height="16" fill="#2b6cb0" rx="3"/>
+<text x="398" y="95" font-size="11.5" fill="#8b98a8">11.4 Mbps  50% serve</text>
+<text x="220" y="117" font-size="12.5" fill="#c9d4e0" text-anchor="end">bw-score 2 (n=1303)</text>
+<rect x="230" y="104" width="103" height="16" fill="#2b6cb0" rx="3"/>
+<text x="340" y="117" font-size="11.5" fill="#8b98a8">7.3 Mbps  46% serve</text>
+<text x="220" y="139" font-size="12.5" fill="#c9d4e0" text-anchor="end">bw-score 3 (n=235)</text>
+<rect x="230" y="126" width="104" height="16" fill="#2b6cb0" rx="3"/>
+<text x="341" y="139" font-size="11.5" fill="#8b98a8">7.4 Mbps  32% serve</text>
+<text x="220" y="161" font-size="12.5" fill="#c9d4e0" text-anchor="end">bw-score 4 (n=9)</text>
+<rect x="230" y="148" width="93" height="16" fill="#2b6cb0" rx="3"/>
+<text x="330" y="161" font-size="11.5" fill="#8b98a8">6.6 Mbps  44% serve</text>
+</svg>

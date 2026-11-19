@@ -1,0 +1,48 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# large raw census dumps (regenerable)
+data/census.json
+data/census.csv
+data/peer_analysis.csv
+
+# backups
+*.pre_osbackfill
+
+# large external crawler dumps (regenerable by download)
+data/achownodes_seeds.txt
+data/achownodes_seeds.txt.gz
+data/fishfoo_seeds.txt
+data/fishfoo_seeds.txt.gz
+data/bitnodes_ipv4_targets.txt
+
+# bulk IP-to-ASN mapping files (regenerable: curl iptoasn.com/data/ip2asn-v{4,6}.tsv.gz)
+data/ip2asn-v4.tsv
+data/ip2asn-v6.tsv
+.aider*
+.env
+
+# local-only pre-publish cleanup notes (never ship)
+CLEANUP_TODO.md
+
+# real-peer observation output (txid/wallet -> source IP) — never publish
+data/observer_out.json
+data/obs_wallet_out.json
+data/signet_observer.json
+# local-only lab directory — not part of this branch
+deanon/
+
+# shipped outputs that back secondary claims but are not read by reproduce.sh (regenerable)
+data/bitnodes_ipv4_probe.csv
+data/nmap_os_v6_2026-11-11.xml
+data/feature_fp.json
+data/census_merged.json
+data/os_scan_2026-10-01.csv
+
+# working/legacy analysis notes — superseded by reports/, kept local only
+docs/
+
+# KIT crawler peer list (address list, not shipped)
+peers.txt
+data/peers.json

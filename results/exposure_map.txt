@@ -1,0 +1,23 @@
+reachable nodes with a parseable Satoshi version: 8470 (deduped, routable)
+
+PRECISE exposure per advisory (full version compared to fix line + backports):
+CVE             type                                fix     exposed        flag     trigger       notes
+CVE-2018-17144  inflation / assert DoS (Critical)   v0.16.3   29 ( 0.3%)  YES      block         PR #14247 (0.16.3)
+CVE-2024-52912  timestamp-overflow net-split (Med)  v0.21.0  156 ( 1.8%)  YES      p2p msg       fixed 0.21.0
+CVE-2024-35202  blocktxn assert crash (High)        v25.0    430 ( 5.1%)  PARTIAL  p2p msg       PR #26898 (v25.0)
+CVE-2024-52911  script interpreter crash (Critical) v29.0   3170 (37.4%)  NO       crafted block fixed v29.0
+CVE-2024-52919  addrman 32-bit id overflow (Low)    v29.0    210 ( 2.5%)  NO       p2p msg       PR #30568 (v29.0); rate-limited since v22
+CVE-2025-46598  CPU DoS via unconfirmed txs (Med)   v30.0   4526 (53.4%)  NO       p2p msg       fixed v30.0
+CVE-2025-54604  disk fill via spoofed self-conn (Med)v30.0   3362 (39.7%)  NO       p2p msg       fixed v30.0; backported 29.1
+CVE-2025-54605  disk fill via invalid blocks (Med)  v30.0   3362 (39.7%)  NO       block         fixed v30.0; backported 29.1
+CVE-2025-62861  TRUC eviction corrupts mempool (Med)v30.0   3410 (40.3%)  NO       reorg         fixed v30.0; backported 28.3/29.2
+CVE-2025-62860  Tor whitelist bypass (High)         v30.0   3410 (40.3%)  NO       p2p msg       fixed v30.0; backported 28.3/29.2
+CVE-2025-62859  compact block witness stall (Med)   v30.0   3438 (40.6%)  NO       p2p msg       fixed v30.0; backported 29.2
+CVE-2026-117349 OOM via paused peer queues (Med)    v32.1   6937 (81.9%)  NO       p2p msg       fixed v32.1; backported 29.5/30.4/31.2
+CVE-2026-117350 OOM via TCP urgent data (Med)       v32.1    543 ( 6.4%)  NO       p2p msg       fixed v32.1; backported 29.5/30.4/31.2; non-Linux only
+CVE-2026-117346 undo file overflow crash (Low)      v32.1   6937 (81.9%)  NO       miner reorg   fixed v32.1; backported 29.5/30.4/31.2
+
+Backports and the rate-limit/OS conditions are applied, so these are the observed
+exposed set, not a major-version upper bound. OS for CVE-2026-117350 is from our nmap
+scan plus the ViniciusCestarii node-OS dataset; only KNOWN non-Linux nodes are counted
+(unknown-OS nodes are excluded), so that one is a lower bound.

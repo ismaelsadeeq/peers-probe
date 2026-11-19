@@ -1,0 +1,44 @@
+RESOURCE-CONSTRAINED TARGETABILITY  (n=8535, 3992 served; slow-RTT>=326ms)
+==========================================================================
+
+A. Signal prevalence by axis (DISK vs BANDWIDTH)
+   [DISK     ] pruned          1981  (23.2%)
+   [BANDWIDTH] residential     2538  (29.7%)
+   [BANDWIDTH] appliance        490  ( 5.7%)
+   [BANDWIDTH] knots            883  (10.3%)
+   [BANDWIDTH] device           334  ( 3.9%)
+   [BANDWIDTH] slow_latency    2136  (25.0%)
+
+B. Bandwidth sub-score vs measured throughput (pruned REMOVED from the axis)
+   bw-score       n  median Mbps  serve%      naive-score (incl pruned)
+   0          3954         30.7   45.3%  | score 0: 29.4 Mbps (n=2912)
+   1          3034         11.4   50.1%  | score 1: 15.9 Mbps (n=3452)
+   2          1303          7.3   46.0%  | score 2: 8.9 Mbps (n=1650)
+   3           235          7.4   32.3%  | score 3: 6.7 Mbps (n=476)
+   4             9          6.6   44.4%  | score 4: 4.4 Mbps (n=43)
+   5                                     | score 5: 6.8 Mbps (n=2)
+   => top/bottom Mbps spread: bw-score 4.65x  vs  naive 6.68x (higher = cleaner separation)
+
+C. Bandwidth targeting rule  (ground-truth slow = served & <= p25 = 8.7 Mbps)
+   bw-score>=1: pool=4581  precision=40.8%  recall=89.4%
+   bw-score>=2: pool=1547  precision=64.2%  recall=43.5%
+
+D. Disk axis is orthogonal to bandwidth (pruned != slow)
+   pruned (disk)              n= 1981  median RTT=170.3ms  median Mbps=17.1
+   residential (bandwidth)    n= 2538  median RTT=265.0ms  median Mbps=11.0
+   all                        n= 8535  median RTT=207.1ms  median Mbps=14.4
+
+E. Adversary cascades (cheap filters first, probe survivors)
+   BANDWIDTH-exhaustion  (residential AS free -> slow RTT cheap -> block probe):
+     probe all                      pool= 8535 probe_cost= 3992 prec=25.1% rec=100.0%
+     + residential AS (free)        pool= 2538 probe_cost= 1385 prec=34.5% rec=47.7%
+     + slow TCP RTT (cheap)         pool=  728 probe_cost=  377 prec=87.0% rec=32.7%
+     => free+cheap pre-filter cuts probe budget 91% (3992 -> 377)
+   DISK-exhaustion  (pruned flag is free and self-declared -> no probe needed):
+     pruned flag (free)             pool= 1981 probe_cost=    0 prec=22.3% rec=23.0%
+
+F. Vulnerable clients (era < v25) x metadata
+   vulnerable: 430 (5.0%)  median 27.9 Mbps vs all 14.4 Mbps
+   pruned 35.3% (all 23.2%) | residential 14.0% (all 29.7%) | device 4.2% (all 3.9%)
+   by version: v22(91), v24(85), v20(68), v21(54), v23(44), v18(29)
+   softest targets (vulnerable AND constrained on either axis): 168
