@@ -89,7 +89,9 @@ def main():
         "Median TCP connect latency by AS class",
         [(f"{k} (n={asc_rows[k]['n']})", asc_rows[k]["lat_med"] or 0)
          for k in sorted(asc_rows, key=lambda k: asc_rows[k]["lat_med"] or 0)],
-        unit=" ms", color="#2b6cb0"))
+        unit=" ms", color="#2b6cb0",
+        note="measured from a single EU vantage: this is mostly distance, not node "
+             "capability (within-country the AS-class gap is ~20ms)"))
     # (the full per-OS / per-signal / latency-vs-bandwidth breakdowns are in latency_profile.txt)
 
     os.makedirs(R(), exist_ok=True)

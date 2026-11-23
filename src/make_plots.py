@@ -106,7 +106,7 @@ _ratio = _med["Hosting"] / _med["Residential"] if _med.get("Residential") else 0
 figs["throughput_cdf"] = sp.lines("Block-serving throughput CDF by network class",
     series, xlabel="Mbps", ylabel="% of peers <= x",
     xticks=[0,25,50,75,100,150,200],
-    note=f"hosting serves ~{_ratio:.1f}x faster than residential (medians {_med['Hosting']:.0f} vs {_med['Residential']:.0f} Mbps)")
+    note=f"raw {_ratio:.1f}x (medians {_med['Hosting']:.0f} vs {_med['Residential']:.0f} Mbps), but single EU vantage + only the ~49% that served a block in time: a short block over a long RTT is slow-start/RTT-limited, so within-country the real gap is ~1.2-1.8x")
 
 # 4. implementation + network type
 def impl_detail(ua):
