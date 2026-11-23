@@ -15,10 +15,10 @@ But most of that is distance, not node capability. Controlling for geography (sa
 comparison), the ~182 ms latency gap shrinks to about 20 ms and the 3.2x throughput gap to roughly
 1.2-1.8x — a real residual difference, but a fraction of the headline. The reason latency and
 throughput "look like the same axis seen twice" is itself the confound: the throughput probe times a
-single ~1-2 MB block, which over a long RTT never escapes TCP slow-start (the congestion window
-doubles once per RTT), so its measured speed is set by RTT, not the access link — about 8 Mbps at
-265 ms versus 100 Mbps at 20 ms for the *same* link. So the throughput figure is largely latency in a
-bandwidth costume. For a fixed-vantage attacker, "slow from here" is still the operative targeting
+single ~1-2 MB block, which over a long RTT barely escapes TCP slow-start (the congestion window
+doubles once per RTT), so for such a short transfer the throughput is roughly inversely proportional
+to RTT — the same link looks several-fold slower over a long path than a short one, independent of the
+access link's real capacity. So the throughput figure is substantially latency in a bandwidth costume. For a fixed-vantage attacker, "slow from here" is still the operative targeting
 signal (a far node genuinely is slower to reach and overwhelm from one point); but as a claim about a
 node's *resources* it is mostly geography. Neither axis, measured from one vantage, is a clean
 capability signal — separating capability from distance needs a handful of distributed vantages and a

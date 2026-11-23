@@ -85,10 +85,12 @@ only, over the reachable nodes (not the address-manager pool):
   them as one.
 - Capacity concentration: weighting each node by its measured block-serving throughput, the single
   largest AS hosts about 10% of reachable nodes but serves roughly 31% of the observed block
-  bandwidth; the top ten ASes hold about 39% of nodes. Hosting networks serve blocks about 3.2x
-  faster than residential — though this throughput is measured from a single vantage and only for the
-  ~49% of reachable nodes that served a full block within the timeout, so it is biased toward fast,
-  nearby nodes and overstates the gap.
+  bandwidth; the top ten ASes hold about 39% of nodes. Hosting networks appear to serve blocks
+  about 3.2x faster than residential, but this is measured from a single vantage and only for the ~49%
+  of reachable nodes that served a full block within the timeout — the slowest and most distant nodes
+  time out and drop from the sample entirely, so the number cannot speak for them. Controlling for
+  geography the gap is far smaller (~1.2-1.8x within the same country), so most of it is distance, not
+  node capability.
 
 We do not interpret these. Whether this concentration matters for eclipse or partition resistance,
 and how asmap's netgroup collapse changes that, depends on attack models (Heilman et al. eclipse,
