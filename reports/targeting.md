@@ -8,18 +8,30 @@ Latency profiles, bandwidth/disk scoring, and cascade filters that cut probe bud
 
 To pressure the weakest nodes, how well does cheap passive metadata find them? Latency is the
 cheapest: every handshake records `connect_ms` (TCP round-trip) at full coverage, and the prober
-also times a ping/pong round trip (Core's min-ping). Broken down per dimension, latency tracks the
-hosting/residential divide: datacenter (PeeringDB "Content") nodes answer in 83 ms and serve 35
+also times a ping/pong round trip (Core's min-ping). Measured from a single EU vantage, latency tracks
+the hosting/residential divide: datacenter (PeeringDB "Content") nodes answer in 83 ms and serve 35
 Mbps, residential (Cable/DSL/ISP) 265 ms and 11 Mbps; by OS, Linux 168 ms vs the device class 256 ms.
-Latency and throughput are the same axis seen twice: binned, they fall on a monotone curve. Latency
-is a full-coverage proxy for the bandwidth a block probe measures expensively.
+But most of that is distance, not node capability. Controlling for geography (same-country
+comparison), the ~182 ms latency gap shrinks to about 20 ms and the 3.2x throughput gap to roughly
+1.2-1.8x — a real residual difference, but a fraction of the headline. The reason latency and
+throughput "look like the same axis seen twice" is itself the confound: the throughput probe times a
+single ~1-2 MB block, which over a long RTT never escapes TCP slow-start (the congestion window
+doubles once per RTT), so its measured speed is set by RTT, not the access link — about 8 Mbps at
+265 ms versus 100 Mbps at 20 ms for the *same* link. So the throughput figure is largely latency in a
+bandwidth costume. For a fixed-vantage attacker, "slow from here" is still the operative targeting
+signal (a far node genuinely is slower to reach and overwhelm from one point); but as a claim about a
+node's *resources* it is mostly geography. Neither axis, measured from one vantage, is a clean
+capability signal — separating capability from distance needs a handful of distributed vantages and a
+per-node best (min-RTT, and a BDP-filling multi-stream transfer rather than one short block).
 
 ![latency by AS class](../results/figures/latency_by_asclass.svg)
 
 Profiling per dimension before merging caught one signal pointing the other way: pruned nodes are
-faster (170 ms / 17 Mbps vs 207 ms / 14 Mbps overall), because operators prune to save disk on
-cheap, well-connected VPS hosts, not constrained home machines. Pruning is a disk constraint,
-orthogonal to the bandwidth constraint the other signals capture. We score two axes: a bandwidth
+faster (170 ms / 17 Mbps vs 207 ms / 14 Mbps overall), and pruning is in fact more common on
+hosting/datacenter nodes (30%) than residential (16%), because operators prune to save disk on cheap,
+well-connected VPS hosts, not constrained home machines. Pruning is a disk constraint, orthogonal to
+the bandwidth constraint the other signals capture — and, being a protocol-declared flag, the one
+axis that is location-independent, so it survives the single-vantage caveat above. We score two axes: a bandwidth
 axis (residential AS, appliance user agent, Knots, embedded OS, slow latency) and a disk axis (the
 pruned flag).
 
