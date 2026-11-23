@@ -1,33 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="760" height="260" font-family="system-ui,-apple-system,Segoe UI,Roboto,sans-serif">
 <rect width="760" height="260" fill="#0d1117"/>
-<text x="18" y="30" font-size="18" font-weight="600" fill="#e8eef5">asmap eclipse benefit: netgroups collapsed to 1 per AS</text>
-<text x="18" y="48" font-size="12.5" fill="#8b98a8">asmap turns each AS's many netgroups (IPv4 /16 + IPv6 /32) into ONE</text>
+<text x="18" y="30" font-size="18" font-weight="600" fill="#e8eef5">asmap collapse: /16+/32 netgroups per AS (reachable nodes)</text>
+<text x="18" y="48" font-size="12.5" fill="#8b98a8">among reachable nodes, the /16 (v4) and /32 (v6) netgroups each AS spans; asmap collapses them to ONE group</text>
 <line x1="338.8" y1="54" x2="338.8" y2="234" stroke="#222a35" stroke-width="1"/>
 <line x1="447.5" y1="54" x2="447.5" y2="234" stroke="#222a35" stroke-width="1"/>
 <line x1="556.2" y1="54" x2="556.2" y2="234" stroke="#222a35" stroke-width="1"/>
 <line x1="665.0" y1="54" x2="665.0" y2="234" stroke="#222a35" stroke-width="1"/>
-<text x="220" y="73" font-size="12.5" fill="#c9d4e0" text-anchor="end">AS3320 Deutsche Telekom</text>
+<text x="220" y="73" font-size="12.5" fill="#c9d4e0" text-anchor="end">AS16509 AWS</text>
 <rect x="230" y="60" width="435" height="16" fill="#e53e3e" rx="3"/>
-<text x="672" y="73" font-size="11.5" fill="#8b98a8">411 netgroups</text>
+<text x="672" y="73" font-size="11.5" fill="#8b98a8">212 netgroups</text>
 <text x="220" y="95" font-size="12.5" fill="#c9d4e0" text-anchor="end">AS7018 AT&amp;T</text>
-<rect x="230" y="82" width="407" height="16" fill="#e53e3e" rx="3"/>
-<text x="644" y="95" font-size="11.5" fill="#8b98a8">385 netgroups</text>
-<text x="220" y="117" font-size="12.5" fill="#c9d4e0" text-anchor="end">AS16509 AWS</text>
-<rect x="230" y="104" width="401" height="16" fill="#e53e3e" rx="3"/>
-<text x="638" y="117" font-size="11.5" fill="#8b98a8">379 netgroups</text>
-<text x="220" y="139" font-size="12.5" fill="#c9d4e0" text-anchor="end">AS4134 China Telecom</text>
-<rect x="230" y="126" width="274" height="16" fill="#e53e3e" rx="3"/>
-<text x="511" y="139" font-size="11.5" fill="#8b98a8">259 netgroups</text>
-<text x="220" y="161" font-size="12.5" fill="#c9d4e0" text-anchor="end">AS701 Verizon</text>
-<rect x="230" y="148" width="201" height="16" fill="#e53e3e" rx="3"/>
-<text x="438" y="161" font-size="11.5" fill="#8b98a8">190 netgroups</text>
-<text x="220" y="183" font-size="12.5" fill="#c9d4e0" text-anchor="end">AS20115 </text>
-<rect x="230" y="170" width="158" height="16" fill="#e53e3e" rx="3"/>
-<text x="395" y="183" font-size="11.5" fill="#8b98a8">150 netgroups</text>
-<text x="220" y="205" font-size="12.5" fill="#c9d4e0" text-anchor="end">AS396982 </text>
-<rect x="230" y="192" width="139" height="16" fill="#e53e3e" rx="3"/>
-<text x="376" y="205" font-size="11.5" fill="#8b98a8">132 netgroups</text>
-<text x="220" y="227" font-size="12.5" fill="#c9d4e0" text-anchor="end">AS4766 </text>
-<rect x="230" y="214" width="131" height="16" fill="#e53e3e" rx="3"/>
-<text x="368" y="227" font-size="11.5" fill="#8b98a8">124 netgroups</text>
+<rect x="230" y="82" width="338" height="16" fill="#e53e3e" rx="3"/>
+<text x="575" y="95" font-size="11.5" fill="#8b98a8">165 netgroups</text>
+<text x="220" y="117" font-size="12.5" fill="#c9d4e0" text-anchor="end">AS701 Verizon</text>
+<rect x="230" y="104" width="242" height="16" fill="#e53e3e" rx="3"/>
+<text x="479" y="117" font-size="11.5" fill="#8b98a8">118 netgroups</text>
+<text x="220" y="139" font-size="12.5" fill="#c9d4e0" text-anchor="end">AS3320 Deutsche Telekom</text>
+<rect x="230" y="126" width="240" height="16" fill="#e53e3e" rx="3"/>
+<text x="477" y="139" font-size="11.5" fill="#8b98a8">117 netgroups</text>
+<text x="220" y="161" font-size="12.5" fill="#c9d4e0" text-anchor="end">AS396982 </text>
+<rect x="230" y="148" width="238" height="16" fill="#e53e3e" rx="3"/>
+<text x="475" y="161" font-size="11.5" fill="#8b98a8">116 netgroups</text>
+<text x="220" y="183" font-size="12.5" fill="#c9d4e0" text-anchor="end">AS7922 </text>
+<rect x="230" y="170" width="151" height="16" fill="#e53e3e" rx="3"/>
+<text x="388" y="183" font-size="11.5" fill="#8b98a8">74 netgroups</text>
+<text x="220" y="205" font-size="12.5" fill="#c9d4e0" text-anchor="end">AS16276 OVH</text>
+<rect x="230" y="192" width="135" height="16" fill="#e53e3e" rx="3"/>
+<text x="372" y="205" font-size="11.5" fill="#8b98a8">66 netgroups</text>
+<text x="220" y="227" font-size="12.5" fill="#c9d4e0" text-anchor="end">AS14061 </text>
+<rect x="230" y="214" width="133" height="16" fill="#e53e3e" rx="3"/>
+<text x="370" y="227" font-size="11.5" fill="#8b98a8">65 netgroups</text>
 </svg>

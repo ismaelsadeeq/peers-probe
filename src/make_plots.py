@@ -192,24 +192,23 @@ if cont_items:
         cont_items, unit=" nodes", color="#805ad5",
         note=f"{len(countries)} countries total; Africa: {cont_totals.get('Africa',0)} nodes ({round(100*cont_totals.get('Africa',0)/total_nodes,1)}%)")
 
-# 5. asmap eclipse collapse (top ASes by netgroup span in new table)
+# 5. asmap collapse (top ASes by netgroup span among REACHABLE nodes, not addrman)
 #    IPv4 uses /16 prefixes, IPv6 uses /32 prefixes — both are "netgroups"
 as16 = defaultdict(set)
-for e in raw.get("new",{}).values():
-    a = e.get("mapped_as"); ip = e["address"]; net = e.get("network", "ipv4")
+for r in bc:
+    ip = r["ip"]; a = asn_by_ip.get(ip)
     if not a:
         continue
-    if net == "ipv4" and ip.count(".")==3:
+    if ":" in ip:
+        as16[a].add("v6:" + ":".join(ip.split(":")[:2]))        # /32
+    elif ip.count(".") == 3:
         as16[a].add("v4:" + ".".join(ip.split(".")[:2]))        # /16
-    elif net == "ipv6" and ":" in ip:
-        parts = ip.split(":")
-        as16[a].add("v6:" + ":".join(parts[:2]))                # /32
 ORG = {7018:"AT&T",16509:"AWS",3320:"Deutsche Telekom",4134:"China Telecom",701:"Verizon",
        14593:"Starlink",24940:"Hetzner",16276:"OVH"}
 top = sorted(((len(v),a) for a,v in as16.items()), reverse=True)[:8]
-figs["asmap_collapse"] = sp.barh("asmap eclipse benefit: netgroups collapsed to 1 per AS",
+figs["asmap_collapse"] = sp.barh("asmap collapse: /16+/32 netgroups per AS (reachable nodes)",
     [(f"AS{a} {ORG.get(a,'')}", n) for n,a in top], unit=" netgroups", color="#e53e3e",
-    note="asmap turns each AS's many netgroups (IPv4 /16 + IPv6 /32) into ONE")
+    note="among reachable nodes, the /16 (v4) and /32 (v6) netgroups each AS spans; asmap collapses them to ONE group")
 
 # 6. reachable nodes by network, from our OWN direct probe across all four networks.
 #    (This single figure replaces the old IPv4-vs-IPv6 chart AND the Bitnodes
