@@ -205,8 +205,15 @@ def _reader(sock):
     return read_exactly
 
 
-def _socks5_connect(proxy_host, proxy_port, target_host, target_port, timeout):
-    """Connect to target through a SOCKS5 proxy (for Tor .onion routing)."""
+def _socks5_connect(proxy_host, proxy_port, target_host, target_port, timeout,
+                    connect_timeout=None):
+    """Connect to target through a SOCKS5 proxy (Tor .onion or I2P .b32.i2p).
+
+    `connect_timeout` governs the SOCKS CONNECT reply, which over Tor/I2P blocks
+    while the proxy builds the circuit/tunnel and looks up the destination — the
+    slow part that an 8s budget was killing (Tor timeouts, I2P status-4). It
+    defaults to `timeout`; set it generously (e.g. 30s Tor, 60s+ I2P). After the
+    reply, the socket reverts to `timeout` for per-message reads."""
     import struct as _st
     s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     s.settimeout(timeout)
@@ -216,7 +223,9 @@ def _socks5_connect(proxy_host, proxy_port, target_host, target_port, timeout):
         raise ConnectionError("SOCKS5 auth rejected")
     host = target_host.encode()
     s.sendall(b'\x05\x01\x00\x03' + bytes([len(host)]) + host + _st.pack('>H', target_port))
+    s.settimeout(connect_timeout or timeout)   # circuit/tunnel build + leaseset lookup
     resp = s.recv(10)
+    s.settimeout(timeout)                        # back to per-message budget
     if len(resp) < 2 or resp[1] != 0:
         raise ConnectionError(f"SOCKS5 connect failed (status {resp[1] if len(resp)>1 else '?'})")
     return s
@@ -226,7 +235,7 @@ def handshake(ip: str, port: int, *, timeout: float = 8.0,
               user_agent: str = PROBE_USER_AGENT, do_headers: bool = False,
               do_ping: bool = False, block_hash: bytes | None = None,
               witness: bool = True, services: int = DEFAULT_SERVICES,
-              block_timeout: float = 30.0,
+              block_timeout: float = 30.0, connect_timeout: float | None = None,
               socks_proxy: tuple | None = None) -> dict:
     """Connect, complete a v1 handshake, record UA + service flags, disconnect.
     Returns a result dict; never raises (errors captured in result['error']).
@@ -249,9 +258,10 @@ def handshake(ip: str, port: int, *, timeout: float = 8.0,
 
     try:
         if socks_proxy:
-            sock = _socks5_connect(socks_proxy[0], socks_proxy[1], ip, port, timeout)
+            sock = _socks5_connect(socks_proxy[0], socks_proxy[1], ip, port, timeout,
+                                   connect_timeout)
         else:
-            sock = socket.create_connection((ip, port), timeout=timeout)
+            sock = socket.create_connection((ip, port), timeout=connect_timeout or timeout)
         sock.settimeout(timeout)
         read_exactly = _reader(sock)
         import os, random
@@ -338,19 +348,35 @@ def handshake(ip: str, port: int, *, timeout: float = 8.0,
 
 
 def run_harvest(targets, *, concurrency: int = 8, timeout: float = 8.0,
+                connect_timeout: float | None = None, retries: int = 1,
                 do_headers: bool = False, do_ping: bool = False,
                 block_hash: bytes | None = None, witness: bool = True,
                 user_agent: str = PROBE_USER_AGENT, on_result=None,
                 socks_proxy: tuple | None = None) -> list[dict]:
-    """Harvest a list of (ip, port) politely: bounded concurrency, one attempt
-    per host (no retries/churn), clean disconnects."""
+    """Harvest a list of (ip, port) politely: bounded concurrency, clean
+    disconnects. `retries` attempts per host on transient failures (timeouts,
+    SOCKS circuit/tunnel build failures, early disconnects) — important over
+    Tor/I2P where the first attempt often fails to build a circuit. Use a
+    generous `connect_timeout` for the circuit/tunnel build (e.g. 30-45s Tor,
+    60s+ I2P) separate from the per-message `timeout`."""
+    _RETRYABLE = ("TimeoutError", "SOCKS5 connect failed", "SOCKS5 auth",
+                  "peer closed connection", "BrokenPipeError", "ConnectionResetError")
+
+    def attempt(ip, port):
+        r = None
+        for i in range(max(1, retries)):
+            r = handshake(ip, int(port), timeout=timeout, connect_timeout=connect_timeout,
+                          user_agent=user_agent, do_headers=do_headers, do_ping=do_ping,
+                          block_hash=block_hash, witness=witness, socks_proxy=socks_proxy)
+            if r.get("ok") or not any(k in (r.get("error") or "") for k in _RETRYABLE):
+                r["attempts"] = i + 1
+                return r
+        r["attempts"] = max(1, retries)
+        return r
+
     results = []
     with ThreadPoolExecutor(max_workers=concurrency) as ex:
-        futs = {ex.submit(handshake, ip, int(port), timeout=timeout,
-                          user_agent=user_agent, do_headers=do_headers,
-                          do_ping=do_ping, block_hash=block_hash, witness=witness,
-                          socks_proxy=socks_proxy): (ip, port)
-                for ip, port in targets}
+        futs = {ex.submit(attempt, ip, port): (ip, port) for ip, port in targets}
         for fut in as_completed(futs):
             r = fut.result()
             results.append(r)

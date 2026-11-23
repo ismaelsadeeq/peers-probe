@@ -71,16 +71,24 @@ and the UK (224).
 
 ### AS concentration (raw data, open question)
 
-The census records each reachable node's autonomous system (via Core's embedded asmap). Two raw
-observations, stated as measurements only:
+The census records each reachable node's autonomous system — from Core's embedded asmap where the IP
+was in the addrman snapshot (about 38% of reachable nodes) and an external ASN dataset otherwise, the
+two agreeing on the AS 96.6% of the time where they overlap. asmap collapses each AS to a single
+network group, so a big cloud or ISP that spans many /16 ranges counts as one group, not many. Across
+the 8,535 reachable nodes there are 1,281 distinct ASes. Two raw observations, stated as measurements
+only, over the reachable nodes (not the address-manager pool):
 
-- Netgroup spread: large cloud and ISP networks each span many /16 ranges (the biggest a few
-  hundred each), while no single AS holds more than 4.4% of the address-manager entries. asmap maps
-  a whole AS to one network group; /16 bucketing would treat those ranges as separate groups.
+- Concentration: the largest single AS is Hetzner with 868 reachable nodes (10.2%), then Google Cloud
+  (6.7%), OVH (5.2%), AWS (4.5%) and DigitalOcean (3.1%). By operator type (PeeringDB class, 97%
+  mapped), hosting/cloud networks carry about 47% of reachable nodes and eyeball ISPs about 30%, the
+  rest mixed-use transit. /16 bucketing would split each cloud into many separate groups; asmap keeps
+  them as one.
 - Capacity concentration: weighting each node by its measured block-serving throughput, the single
   largest AS hosts about 10% of reachable nodes but serves roughly 31% of the observed block
   bandwidth; the top ten ASes hold about 39% of nodes. Hosting networks serve blocks about 3.2x
-  faster than residential.
+  faster than residential — though this throughput is measured from a single vantage and only for the
+  ~49% of reachable nodes that served a full block within the timeout, so it is biased toward fast,
+  nearby nodes and overstates the gap.
 
 We do not interpret these. Whether this concentration matters for eclipse or partition resistance,
 and how asmap's netgroup collapse changes that, depends on attack models (Heilman et al. eclipse,
