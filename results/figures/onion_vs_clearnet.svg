@@ -7,27 +7,27 @@
 <line x1="556.2" y1="54" x2="556.2" y2="234" stroke="#222a35" stroke-width="1"/>
 <line x1="665.0" y1="54" x2="665.0" y2="234" stroke="#222a35" stroke-width="1"/>
 <text x="220" y="73" font-size="12.5" fill="#c9d4e0" text-anchor="end">pruned · clearnet</text>
-<rect x="230" y="60" width="106" height="16" fill="#a371f7" rx="3"/>
-<text x="343" y="73" font-size="11.5" fill="#8b98a8">23.2%</text>
+<rect x="230" y="60" width="113" height="16" fill="#a371f7" rx="3"/>
+<text x="350" y="73" font-size="11.5" fill="#8b98a8">23.2%</text>
 <text x="220" y="95" font-size="12.5" fill="#c9d4e0" text-anchor="end">pruned · onion</text>
-<rect x="230" y="82" width="32" height="16" fill="#a371f7" rx="3"/>
-<text x="269" y="95" font-size="11.5" fill="#8b98a8">7.1%</text>
+<rect x="230" y="82" width="34" height="16" fill="#a371f7" rx="3"/>
+<text x="271" y="95" font-size="11.5" fill="#8b98a8">7.0%</text>
 <text x="220" y="117" font-size="12.5" fill="#c9d4e0" text-anchor="end">vuln&lt;v25 · clearnet</text>
-<rect x="230" y="104" width="22" height="16" fill="#a371f7" rx="3"/>
-<text x="259" y="117" font-size="11.5" fill="#8b98a8">5.0%</text>
+<rect x="230" y="104" width="24" height="16" fill="#a371f7" rx="3"/>
+<text x="261" y="117" font-size="11.5" fill="#8b98a8">5.0%</text>
 <text x="220" y="139" font-size="12.5" fill="#c9d4e0" text-anchor="end">vuln&lt;v25 · onion</text>
-<rect x="230" y="126" width="2" height="16" fill="#a371f7" rx="3"/>
-<text x="239" y="139" font-size="11.5" fill="#8b98a8">0.4%</text>
+<rect x="230" y="126" width="5" height="16" fill="#a371f7" rx="3"/>
+<text x="242" y="139" font-size="11.5" fill="#8b98a8">1.1%</text>
 <text x="220" y="161" font-size="12.5" fill="#c9d4e0" text-anchor="end">P2P_V2 · clearnet</text>
-<rect x="230" y="148" width="365" height="16" fill="#a371f7" rx="3"/>
-<text x="602" y="161" font-size="11.5" fill="#8b98a8">79.6%</text>
+<rect x="230" y="148" width="388" height="16" fill="#a371f7" rx="3"/>
+<text x="625" y="161" font-size="11.5" fill="#8b98a8">79.6%</text>
 <text x="220" y="183" font-size="12.5" fill="#c9d4e0" text-anchor="end">P2P_V2 · onion</text>
 <rect x="230" y="170" width="435" height="16" fill="#a371f7" rx="3"/>
-<text x="672" y="183" font-size="11.5" fill="#8b98a8">94.7%</text>
+<text x="672" y="183" font-size="11.5" fill="#8b98a8">89.2%</text>
 <text x="220" y="205" font-size="12.5" fill="#c9d4e0" text-anchor="end">Knots · clearnet</text>
-<rect x="230" y="192" width="47" height="16" fill="#a371f7" rx="3"/>
-<text x="284" y="205" font-size="11.5" fill="#8b98a8">10.3%</text>
+<rect x="230" y="192" width="50" height="16" fill="#a371f7" rx="3"/>
+<text x="287" y="205" font-size="11.5" fill="#8b98a8">10.3%</text>
 <text x="220" y="227" font-size="12.5" fill="#c9d4e0" text-anchor="end">Knots · onion</text>
-<rect x="230" y="214" width="53" height="16" fill="#a371f7" rx="3"/>
-<text x="290" y="227" font-size="11.5" fill="#8b98a8">11.7%</text>
+<rect x="230" y="214" width="76" height="16" fill="#a371f7" rx="3"/>
+<text x="313" y="227" font-size="11.5" fill="#8b98a8">15.6%</text>
 </svg>

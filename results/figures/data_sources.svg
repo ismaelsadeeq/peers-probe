@@ -7,9 +7,9 @@
 <line x1="556.2" y1="54" x2="556.2" y2="102" stroke="#222a35" stroke-width="1"/>
 <line x1="665.0" y1="54" x2="665.0" y2="102" stroke="#222a35" stroke-width="1"/>
 <text x="220" y="73" font-size="12.5" fill="#c9d4e0" text-anchor="end">clearnet (IPv4+IPv6)</text>
-<rect x="230" y="60" width="435" height="16" fill="#38a169" rx="3"/>
-<text x="672" y="73" font-size="11.5" fill="#8b98a8">8,535 nodes</text>
+<rect x="230" y="60" width="370" height="16" fill="#38a169" rx="3"/>
+<text x="607" y="73" font-size="11.5" fill="#8b98a8">8,535 nodes</text>
 <text x="220" y="95" font-size="12.5" fill="#c9d4e0" text-anchor="end">onion (Tor direct)</text>
-<rect x="230" y="82" width="115" height="16" fill="#38a169" rx="3"/>
-<text x="352" y="95" font-size="11.5" fill="#8b98a8">2,266 nodes</text>
+<rect x="230" y="82" width="435" height="16" fill="#38a169" rx="3"/>
+<text x="672" y="95" font-size="11.5" fill="#8b98a8">10,024 nodes</text>
 </svg>
